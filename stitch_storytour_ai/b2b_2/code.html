@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fbf9f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#bbc7db", "on-tertiary-container": "#4f3e00", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "on-primary-fixed": "#101c2a", "background": "#fbf9f6", "outline": "#75777c", "primary": "#000000", "on-tertiary-fixed-variant": "#574500", "on-surface": "#1b1c1a", "on-primary": "#ffffff", "primary-fixed": "#d7e3f7", "on-tertiary-fixed": "#241a00", "inverse-surface": "#30312f", "on-primary-container": "#798596", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf9f6", "tertiary-fixed": "#ffe088", "secondary-fixed": "#ece2cc", "secondary-container": "#e9dfc9", "on-error": "#ffffff", "secondary": "#655e4d", "surface-container-high": "#eae8e5", "inverse-on-surface": "#f2f0ed", "outline-variant": "#c5c6cc", "on-error-container": "#93000a", "inverse-primary": "#bbc7db", "on-primary-fixed-variant": "#3c4857", "tertiary": "#735c00", "on-surface-variant": "#44474c", "on-background": "#1b1c1a", "surface-tint": "#535f70", "surface": "#fbf9f6", "error-container": "#ffdad6", "tertiary-fixed-dim": "#e9c349", "on-secondary-fixed-variant": "#4c4636", "surface-container-low": "#f5f3f0", "on-secondary-fixed": "#201b0e", "primary-container": "#101c2a", "secondary-fixed-dim": "#cfc6b0", "surface-dim": "#dbdad7", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#efeeeb", "surface-variant": "#e4e2df", "on-secondary-container": "#696251", "tertiary-container": "#cca730" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1.25rem", "space-md": "1rem" }, fontFamily: { "label-sm": ["Manrope"], "label-md": ["Manrope"], "headline-lg-mobile": ["Noto Serif"], "body-lg": ["Manrope"], "display-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "headline-sm": ["Noto Serif"], "title-md": ["Manrope"], "body-md": ["Manrope"], "display-lg": ["Noto Serif"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="뒤로가기" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-primary-container truncate max-w-[210px]">B2B 기관 맞춤 상담 신청</h1></div><div class="flex items-center gap-space-xs"><button aria-label="공유하기" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="닫기" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">close</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- 상단 인트로 배너: 품격 있는 문화 아카이브 매거진 에디토리얼 스타일 -->
+<section class="relative px-margin pt-space-md pb-space-lg bg-primary-container text-on-primary overflow-hidden">
+<!-- 배경 은은한 텍스처 장식 SVG -->
+<div class="absolute inset-0 pointer-events-none opacity-10">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,50 Q100,120 200,60 T400,90 L400,300 L0,300 Z" fill="currentColor"></path>
+<circle cx="340" cy="60" fill="none" r="110" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold tracking-wider uppercase">
+          B2B Institutional Solution
+        </span>
+<span class="flex items-center text-on-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed mr-0.5" style="font-variation-settings: 'FILL' 1;">verified</span>
+          검증된 공공 파트너십
+        </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary mt-1 leading-snug">
+        관람객 몰입도를 극대화하는<br/>
+<span class="text-tertiary-fixed font-semibold">스마트 문화관광 솔루션</span>
+</h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed mt-1">
+        국립중앙박물관, 국가유산청 연계 레퍼런스 검증. 기관 전담 AI 도슨트 엔진과 실시간 관람 분석 대시보드를 2주간 무료로 경험해 보세요.
+      </p>
+<!-- 핵심 성과 지표 칩 모음 -->
+<div class="grid grid-cols-3 gap-2 mt-3 pt-2">
+<div class="bg-surface-container-highest/20 backdrop-blur-md rounded-lg p-2.5 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-primary-container">평균 관람</span>
+<span class="font-title-md text-title-md text-tertiary-fixed font-bold">체류 +184%</span>
+</div>
+<div class="bg-surface-container-highest/20 backdrop-blur-md rounded-lg p-2.5 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-primary-container">외국인 특화</span>
+<span class="font-title-md text-title-md text-on-primary font-bold">10개국 번역</span>
+</div>
+<div class="bg-surface-container-highest/20 backdrop-blur-md rounded-lg p-2.5 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-primary-container">설치 키트</span>
+<span class="font-title-md text-title-md text-tertiary-fixed font-bold">A5 스탠드 지원</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 기관 레퍼런스 및 신뢰성 띠배너 -->
+<div class="px-margin py-3 bg-secondary-container text-on-secondary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<span class="font-label-md text-label-md font-semibold">전국 48개 국공립 박물관·지자체 도입 완료</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-medium">조달청 등록</span>
+</div>
+<!-- 비주얼 레퍼런스 프리뷰 카드 -->
+<section class="px-margin pt-space-lg">
+<div class="relative rounded-xl overflow-hidden shadow-md bg-surface-container-low">
+<img class="w-full h-40 object-cover" data-alt="Modern museum exhibition interior where visitors are looking at ancient artifacts while using minimalist smartphone audio docent devices, warm gallery lighting, editorial cultural magazine photography, aesthetic composition in serene beige and navy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAKHqmIZEC9Ps_EDNPpjRJT2NGsRRtpqQkwJfs64Uka2MPna1Iig-JiB7E5T-LJtNUTx-3Gfr9FD1QeNDB-roCDuF4ZCxLBl3P4OxelMwJETu9Sye90rZ9dPZYAENknXBSA6ZZxxT7ynxpPAY1RFRTxa04q6tbxR_dB_N8vIjXR7o2xiPJScU5EppVKWuoRShaPOl4RpHAWrdkyEmZICdJIZostdwVOdQHHD_HRaV0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent flex items-end p-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">headset_mic</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase tracking-wider">StoryTour Field Suite</p>
+<p class="font-title-md text-title-md text-on-primary font-semibold">전시관 맞춤 음향 모델링 &amp; 3D 공간 오디오</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 신청 양식 입력 폼 시작 -->
+<form class="px-margin pt-space-lg pb-32 flex flex-col gap-space-lg" id="consultation-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- 1. 기관 유형 선택 -->
+<fieldset class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<legend class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5">
+<span>기관 구분</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block" title="필수입력"></span>
+</legend>
+<span class="font-label-sm text-label-sm text-on-surface-variant">유형 맞춤 견적 적용</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<label class="group relative flex items-center p-3 rounded-lg bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input checked="" class="sr-only" name="org-type" type="radio" value="museum"/>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-tertiary group-has-[:checked]:text-tertiary-fixed">museum</span>
+<span class="font-label-md text-label-md font-semibold">박물관 / 미술관</span>
+</div>
+</label>
+<label class="group relative flex items-center p-3 rounded-lg bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input class="sr-only" name="org-type" type="radio" value="local-gov"/>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary group-has-[:checked]:text-tertiary-fixed">domain</span>
+<span class="font-label-md text-label-md font-semibold">지자체 / 관광재단</span>
+</div>
+</label>
+<label class="group relative flex items-center p-3 rounded-lg bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input class="sr-only" name="org-type" type="radio" value="heritage"/>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary group-has-[:checked]:text-tertiary-fixed">temple_buddhist</span>
+<span class="font-label-md text-label-md font-semibold">사찰 / 역사유적지</span>
+</div>
+</label>
+<label class="group relative flex items-center p-3 rounded-lg bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input class="sr-only" name="org-type" type="radio" value="exhibit"/>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary group-has-[:checked]:text-tertiary-fixed">palette</span>
+<span class="font-label-md text-label-md font-semibold">기획전시 / 민간아트</span>
+</div>
+</label>
+</div>
+</fieldset>
+<!-- 2. 기관 기본 정보 입력 -->
+<section class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5" for="org-name">
+<span>기관명 및 소속 부서</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<p class="font-label-sm text-label-sm text-on-surface-variant">공문 발송 및 제안서 명기용 기관명을 정확히 적어주세요.</p>
+</div>
+<input class="w-full px-3.5 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm transition-all" id="org-name" placeholder="예: 국립경주박물관 학예연구과" required="" type="text"/>
+<!-- 담당자 성함 & 직함 -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="officer-name">
+<span>담당자 성함</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm" id="officer-name" placeholder="예: 홍길동" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="officer-title">
+<span>직함 / 직급</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm" id="officer-title" placeholder="예: 학예연구사 / 팀장" required="" type="text"/>
+</div>
+</div>
+<!-- 연락처 & 공무 이메일 -->
+<div class="flex flex-col gap-1 mt-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="officer-phone">
+<span>담당자 연락처</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<div class="relative">
+<input class="w-full pl-10 pr-3.5 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm" id="officer-phone" placeholder="010-0000-0000" required="" type="tel"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-[18px] text-outline">call</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="officer-email">
+<span>공무/업무용 이메일</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">도입 제안서 즉시 발송</span>
+</div>
+<div class="relative">
+<input class="w-full pl-10 pr-3.5 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm" id="officer-email" placeholder="name@korea.kr 또는 official@institution.or.kr" required="" type="email"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-[18px] text-outline">mail</span>
+</div>
+</div>
+</section>
+<!-- 3. 유적지 / 전시 규모 선택 -->
+<fieldset class="flex flex-col gap-2">
+<legend class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5">
+<span>도입 희망 전시·유적 규모</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</legend>
+<div class="flex flex-col gap-2 mt-1">
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer transition-all has-[:checked]:bg-secondary-fixed has-[:checked]:text-on-secondary-fixed">
+<div class="flex items-center gap-3">
+<input checked="" class="accent-primary w-4 h-4" name="scale" type="radio" value="small"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">상설/특별전시 (1 ~ 20개 스팟)</span>
+<span class="font-label-sm text-label-sm opacity-80">단일 전시실 또는 소규모 기획관</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest font-medium">스타터</span>
+</label>
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer transition-all has-[:checked]:bg-secondary-fixed has-[:checked]:text-on-secondary-fixed">
+<div class="flex items-center gap-3">
+<input class="accent-primary w-4 h-4" name="scale" type="radio" value="medium"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">중대형 종합관 (21 ~ 50개 스팟)</span>
+<span class="font-label-sm text-label-sm opacity-80">복합 층별 전시장 또는 야외 문화재단지</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest font-medium">추천</span>
+</label>
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer transition-all has-[:checked]:bg-secondary-fixed has-[:checked]:text-on-secondary-fixed">
+<div class="flex items-center gap-3">
+<input class="accent-primary w-4 h-4" name="scale" type="radio" value="large"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">대규모 역사유적권역 (50개 이상)</span>
+<span class="font-label-sm text-label-sm opacity-80">도시 단위 테마투어, 고궁, 광역 유적 벨트</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest font-medium">엔터프라이즈</span>
+</label>
+</div>
+</fieldset>
+<!-- 4. 관심 솔루션 복수 선택 -->
+<fieldset class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<legend class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5">
+<span>도입 희망 핵심 솔루션</span>
+<span class="font-label-sm text-label-sm text-secondary font-normal">(복수 선택 가능)</span>
+</legend>
+<span class="font-label-sm text-label-sm text-tertiary">데모 시연 우선 배정</span>
+</div>
+<div class="grid grid-cols-1 gap-2 mt-1">
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer has-[:checked]:bg-surface-container-highest">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4" name="solution" type="checkbox" value="ai-curator"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">맞춤형 AI 학예사 보이스 브랜딩</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">기관 고유의 캐릭터와 아카이브 구술 기록을 학습한 맞춤 음성 엔진</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer has-[:checked]:bg-surface-container-highest">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4" name="solution" type="checkbox" value="qr-beacon"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">현장 QR &amp; 비콘 근접 자동재생 솔루션</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">앱 설치 없는 웹 기반 즉각 재생 및 하드웨어 비콘 자동 트리거</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer has-[:checked]:bg-surface-container-highest">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4" name="solution" type="checkbox" value="dashboard"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">관람객 실시간 밀집도 및 통계 대시보드</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">전시실별 체류 시간, 유물별 인기 지수 분석 B2B 행정 리포트 제공</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer has-[:checked]:bg-surface-container-highest">
+<input checked="" class="mt-0.5 accent-primary w-4 h-4" name="solution" type="checkbox" value="multilang"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">다국어(10개국어) 실시간 문화재 AI 번역</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">한국사 특수 어휘를 완벽히 치환한 공인 문화유산 영/중/일/유럽어 음성</span>
+</div>
+</label>
+</div>
+</fieldset>
+<!-- 5. 방문 데모 상담 희망 일시 선택 -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-1.5" for="demo-datetime">
+<span>방문/온라인 데모 상담 희망일</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error inline-block"></span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">현장 장비 지참 방문 가능</span>
+</div>
+<div class="relative">
+<input class="w-full px-3.5 py-3 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm" id="demo-datetime" required="" type="date"/>
+</div>
+<div class="flex gap-2 mt-1">
+<label class="flex-1 flex items-center justify-center gap-2 p-2.5 rounded-lg bg-surface-container cursor-pointer has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input checked="" class="sr-only" name="meeting-type" type="radio" value="offline"/>
+<span class="material-symbols-outlined text-[18px]">location_away</span>
+<span class="font-label-md text-label-md font-semibold">기관 현장 방문 시연</span>
+</label>
+<label class="flex-1 flex items-center justify-center gap-2 p-2.5 rounded-lg bg-surface-container cursor-pointer has-[:checked]:bg-primary-container has-[:checked]:text-on-primary">
+<input class="sr-only" name="meeting-type" type="radio" value="online"/>
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span class="font-label-md text-label-md font-semibold">비대면 화상 미팅</span>
+</label>
+</div>
+</div>
+<!-- 6. 요청 메모 및 자유 문의 -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-md text-title-md text-on-surface font-semibold" for="inquiry-memo">
+        추가 문의사항 및 요청 메모
+      </label>
+<textarea class="w-full px-3.5 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-low focus:outline-none shadow-sm resize-none" id="inquiry-memo" placeholder="예: 상반기 예산 편성 심의 일정에 맞추어 맞춤 제안서와 시연 샘플을 사전 검토하고자 합니다." rows="3"></textarea>
+</div>
+<!-- 7. 개인정보 수집 및 상담 안내 동의 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-1 accent-primary w-4 h-4 rounded" id="privacy-agreement" required="" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-semibold">
+          [필수] 기관 상담 및 시연 안내를 위한 개인정보 수집·이용 동의
+        </span>
+</label>
+<p class="font-label-sm text-label-sm text-on-surface-variant pl-6 leading-relaxed">
+        입력하신 기관명, 담당자 정보는 1:1 맞춤형 컨설팅 및 솔루션 제안서 발송 목적으로만 활용되며 관련 법령에 의거 안전하게 관리됩니다.
+      </p>
+</div>
+<!-- 신뢰 보증 뱃지 -->
+<div class="flex items-center justify-center gap-4 py-2 opacity-70 text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>공공 데이터 보안 준수</span>
+</div>
+<span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>24시간 전담 배정</span>
+</div>
+</div>
+</form>
+<!-- 하단 고정 CTA 패널 및 툴팁 안내 -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl pb-safe shadow-[0_-8px_24px_rgba(16,28,42,0.08)]">
+<!-- 24시간 내 유선 안내 툴팁 배너 -->
+<div class="bg-secondary-fixed py-1.5 px-margin flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pace</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-semibold">
+        신청 접수 즉시 24시간 내 기관 전담 수석 컨설턴트가 유선 연락을 드립니다.
+      </span>
+</div>
+<div class="p-margin pt-2.5">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary-container text-on-primary font-title-md text-title-md font-bold tracking-wide flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-lg" form="consultation-form" type="submit">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">send</span>
+<span>기관 맞춤 상담 &amp; 무료 데모 신청하기</span>
+</button>
+</div>
+</aside>
+<!-- 접수 완료 모달 토스트 (JS 트리거) -->
+<dialog class="fixed inset-0 z-50 p-margin bg-transparent backdrop:bg-primary-container/60 open:flex items-center justify-center w-full max-w-sm" id="success-dialog">
+<div class="w-full bg-surface-container-lowest text-on-surface p-space-lg rounded-2xl shadow-2xl flex flex-col items-center text-center">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[32px] text-tertiary">check_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">상담 신청이 완료되었습니다</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-5">
+        등록하신 업무용 메일로 <span class="font-semibold text-on-surface">StoryTour 솔루션 소개서</span>가 발송되었습니다. 24시간 내 전문 컨설턴트가 연락드리겠습니다.
+      </p>
+<button class="w-full py-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold" onclick="document.getElementById('success-dialog').close()">
+        확인
+      </button>
+</div>
+</dialog>
+</div>
+<script>
+  function handleFormSubmit() {
+    const dialog = document.getElementById('success-dialog');
+    if (dialog && typeof dialog.showModal === 'function') {
+      dialog.showModal();
+    } else {
+      alert('신청이 성공적으로 접수되었습니다. 24시간 이내에 담당자가 연락드리겠습니다.');
+    }
+  }
+
+  // 오늘 날짜 기준 기본 데모 희망일 설정 (3일 후 평일 권장)
+  document.addEventListener('DOMContentLoaded', () => {
+    const dateInput = document.getElementById('demo-datetime');
+    if (dateInput) {
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 3);
+      const yyyy = targetDate.getFullYear();
+      const mm = String(targetDate.getMonth() + 1).padStart(2, '0');
+      const dd = String(targetDate.getDate()).padStart(2, '0');
+      dateInput.value = `${yyyy}-${mm}-${dd}`;
+      dateInput.min = new Date().toISOString().split('T')[0];
+    }
+  });
+</script></main></body></html>

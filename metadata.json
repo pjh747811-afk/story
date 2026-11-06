@@ -1,0 +1,8 @@
+{
+  "name": "StoryTour AI - 문화유산 AI 도슨트",
+  "description": "국보 및 주요 궁궐·유적지를 위한 지능형 문화유산 AI 도슨트, AR 카메라 해설 및 B2B 스마트 관광 관제 솔루션",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "permissions": []
+}

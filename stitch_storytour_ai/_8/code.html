@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#e4e2df","surface-container":"#efeeeb","inverse-surface":"#30312f","on-error":"#ffffff","surface-container-high":"#eae8e5","surface-container-lowest":"#ffffff","outline-variant":"#c5c6cc","surface-dim":"#dbdad7","on-tertiary-fixed-variant":"#574500","on-surface-variant":"#44474c","on-secondary-fixed-variant":"#4c4636","on-tertiary":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","inverse-primary":"#bbc7db","secondary-fixed":"#ece2cc","on-primary-fixed-variant":"#3c4857","tertiary-fixed-dim":"#e9c349","on-secondary-fixed":"#201b0e","secondary":"#655e4d","error":"#ba1a1a","primary-fixed":"#d7e3f7","background":"#fbf9f6","tertiary-container":"#cca730","on-primary-container":"#798596","surface-variant":"#e4e2df","on-secondary-container":"#696251","primary-container":"#101c2a","primary-fixed-dim":"#bbc7db","on-error-container":"#93000a","outline":"#75777c","secondary-container":"#e9dfc9","on-surface":"#1b1c1a","on-primary":"#ffffff","primary":"#000000","secondary-fixed-dim":"#cfc6b0","surface-container-low":"#f5f3f0","surface-tint":"#535f70","tertiary":"#735c00","on-tertiary-fixed":"#241a00","on-primary-fixed":"#101c2a","tertiary-fixed":"#ffe088","surface":"#fbf9f6","surface-bright":"#fbf9f6","on-background":"#1b1c1a","on-tertiary-container":"#4f3e00","inverse-on-surface":"#f2f0ed"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2.5rem","margin":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem","space-md":"1rem","gutter":"1rem"},fontFamily:{"headline-sm":["Noto Serif"],"headline-lg":["Noto Serif"],"label-md":["Manrope"],"display-lg":["Noto Serif"],"body-lg":["Manrope"],"headline-lg-mobile":["Noto Serif"],"display-lg-mobile":["Noto Serif"],"label-sm":["Manrope"],"title-md":["Manrope"],"body-md":["Manrope"]},fontSize:{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"title-md":["17px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm mb-space-md"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">StoryTour AI</span><span class="font-label-sm text-label-sm text-tertiary tracking-wider uppercase font-semibold">Enterprise Portal</span></div></div><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">museum</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant">관리 대상 기관</span><span class="font-body-md text-body-md text-on-surface font-semibold truncate max-w-[130px]">국립중앙박물관</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><nav class="flex flex-col px-space-md gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">대시보드 요약</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="docent-content-cms" href="#"><span class="material-symbols-outlined text-[20px]">record_voice_over</span><span class="font-body-md text-body-md">AI 해설 콘텐츠 관리</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="qr-and-beacon-manager" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span class="font-body-md text-body-md">QR 코드 &amp; 비콘 관리</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audience-analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">관람객 실시간 통계</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="multilingual-engine" href="#"><span class="material-symbols-outlined text-[20px]">translate</span><span class="font-body-md text-body-md">다국어 번역 엔진</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="custom-branding-and-settings" href="#"><span class="material-symbols-outlined text-[20px]">palette</span><span class="font-body-md text-body-md">기관 브랜딩 및 설정</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="enterprise-billing" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-body-md text-body-md">구독 및 API 플랜</span></a></nav></div><div class="p-space-md flex flex-col gap-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">시스템 현황</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>가동중 99.98%</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">클라우드 실시간 음성합성 엔진</span></div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">help_center</span><span class="font-label-md text-label-md">공공기관 기술지원 데스크</span></div><span class="material-symbols-outlined text-[16px]">north_east</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="text-secondary">스토리투어 B2B</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">국립중앙박물관 지회</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-72 lg:w-96 pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="전시관, 소장품 ID, 도슨트 스크립트 검색..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[16px] text-tertiary">groups</span><span class="font-label-sm text-label-sm font-semibold">실시간 관람객 청취중:</span><span class="font-label-md text-label-md font-bold text-on-surface">1,428명</span></div><button class="relative w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden lg:flex"><span class="font-title-md text-title-md text-on-surface leading-tight">김선우</span><span class="font-label-sm text-label-sm text-on-surface-variant">학예연구팀장 / 관리자</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub Header & Operations Toolbar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Live Crowd Density &amp; Spatial Intelligence</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-ping"></span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-medium">0.4s 지연율 초정밀 관제</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">전시관 관람객 밀집 히트맵 관제실</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">국립중앙박물관 상설전시관 전체 층별 IoT 비콘 및 비전 센서 연동 실시간 동선 제어 콘솔</p>
+</div>
+<!-- Spatial & Time Slice Selectors -->
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<!-- Floor Select Dropdown Pill -->
+<div class="relative">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md shadow-sm transition-all hover:bg-surface-container" id="floor-select-btn">
+<span class="material-symbols-outlined text-secondary text-[18px]">layers</span>
+<span>상설전시관 2층 (사유의 방 / 서화관 / 불교조각)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Mode Toggle -->
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button class="px-space-md py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+          실시간 LIVE
+        </button>
+<button class="px-space-md py-1.5 rounded-md text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">
+          금일 누적 히트맵
+        </button>
+<button class="px-space-md py-1.5 rounded-md text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">history</span>
+          타임랩스
+        </button>
+</div>
+<!-- Refresh Status Button -->
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface transition-colors shadow-sm" title="수동 동기화">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Realtime KPI Metric Bento Strip (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Total Visitors -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">원내 총 체류 관람객</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">1,428</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 2,500명</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+          수용율 57.1% · 원활
+        </span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 57.1%;"></div>
+</div>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>최적 적정선 1,800명</span>
+<span class="font-semibold text-secondary">한도 잔여: 1,072명</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Highest Congestion Area -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">최고 밀집 위험 구역</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">상설관 2층 [사유의 방]</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+          밀집도 88.4%
+        </span>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 text-error font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>사전 분산 및 대기열 권고 기준치 초과</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">정원 160명 중 142명</span>
+</div>
+</div>
+<!-- Card 3: Avg Dwell Time -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase font-semibold">평균 소장품 관람 체류 시간</span>
+<div class="flex items-baseline gap-1.5 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">42.6</span>
+<span class="font-title-md text-title-md text-on-surface">분 / 구역당</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+          ▲ 6.2분 (전주 대비)
+        </span>
+</div>
+<div class="mt-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>스마트 AI 도슨트 오디오 청취율</span>
+<span class="font-semibold text-on-surface">전체 74.8% 인입</span>
+</div>
+</div>
+<!-- Card 4: AI Flow Distribution Triggers -->
+<div class="p-space-lg rounded-xl bg-primary-container text-on-primary shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-semibold tracking-wider uppercase">자율 동선 분산 자동화 트리거</span>
+<div class="flex items-baseline gap-1.5 mt-1">
+<span class="font-display-lg text-display-lg text-white font-bold tracking-tight">14</span>
+<span class="font-title-md text-title-md text-surface-container-highest">회 발동 완료</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center justify-between text-on-primary-container font-label-sm text-label-sm pt-2">
+<span>최근 유도: 3층 불교조각실 쾌적 추천</span>
+<span class="text-tertiary-fixed font-semibold">92명 우회 이동</span>
+</div>
+</div>
+</div>
+<!-- Main Workstation Layout: 12-Col Grid Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg items-start">
+<!-- Central Stage: Interactive Heatmap Visualizer (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col relative overflow-hidden">
+<!-- Floor Canvas Header & Interactive Filter Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">2F 아키텍처 관람객 유동 벡터 &amp; 3D 밀집 히트맵</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">축척: 1:250 | 피플카운터 카메라 24개소 매핑 뷰포트</span>
+</div>
+</div>
+<!-- Heatmap Layer Switches -->
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm">
+              비콘 노드 On
+            </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">
+              동선 벡터 화살표
+            </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              위험 경계(80%+)
+            </button>
+</div>
+</div>
+<!-- Heatmap Intensity & Visual Controls Floating Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low px-space-md py-2 rounded-lg mb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">히트맵 투명도:</span>
+<input class="w-24 accent-primary h-1 bg-surface-container-highest rounded-lg cursor-pointer" type="range" value="75"/>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">75%</span>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">밀도 스무딩:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold text-on-surface">가우시안 4.2σ</span>
+</div>
+</div>
+<!-- Legend Pill -->
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>밀도 범례:</span>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+<span class="text-[10px]">쾌적 (&lt;40%)</span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500 ml-1.5"></span>
+<span class="text-[10px]">보통</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error ml-1.5"></span>
+<span class="text-[10px] font-bold text-error">과밀 (&gt;80%)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Vector Floorplan Stage -->
+<div class="relative w-full aspect-[16/10] bg-surface-container rounded-xl overflow-hidden shadow-inner flex items-center justify-center p-space-sm select-none">
+<!-- Background Architectural Grid Lines & Blueprint Layout -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="arch-grid" patternunits="userSpaceOnUse" width="32">
+<path class="text-surface-container-highest" d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" stroke-width="0.75"></path>
+</pattern>
+<!-- Radial Heat Blurs -->
+<radialgradient cx="50%" cy="50%" id="heat-heavy" r="50%">
+<stop offset="0%" stop-color="#ba1a1a" stop-opacity="0.85"></stop>
+<stop offset="45%" stop-color="#cca730" stop-opacity="0.6"></stop>
+<stop offset="80%" stop-color="#319795" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#319795" stop-opacity="0"></stop>
+</radialgradient>
+<radialgradient cx="50%" cy="50%" id="heat-medium" r="50%">
+<stop offset="0%" stop-color="#cca730" stop-opacity="0.75"></stop>
+<stop offset="60%" stop-color="#319795" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#319795" stop-opacity="0"></stop>
+</radialgradient>
+<radialgradient cx="50%" cy="50%" id="heat-light" r="50%">
+<stop offset="0%" stop-color="#319795" stop-opacity="0.55"></stop>
+<stop offset="70%" stop-color="#319795" stop-opacity="0.15"></stop>
+<stop offset="100%" stop-color="#319795" stop-opacity="0"></stop>
+</radialgradient>
+<!-- Flow Vector Marker -->
+<marker id="arrow" markerheight="4" markerwidth="4" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#101c2a" opacity="0.6"></path>
+</marker>
+</defs>
+<!-- Architectural Blueprint Walls & Rooms -->
+<rect fill="url(#arch-grid)" height="100%" width="100%"></rect>
+<!-- Outer Museum Perimeter -->
+<rect fill="none" height="88%" rx="8" stroke="#c5c6cc" stroke-dasharray="6,4" stroke-width="2" width="90%" x="5%" y="6%"></rect>
+<!-- Gallery 1: 사유의 방 (Room of Quiet Contemplation) - Critical Density Zone -->
+<rect fill="#fbf9f6" height="42%" rx="6" stroke="#75777c" stroke-width="1.5" width="32%" x="8%" y="10%"></rect>
+<!-- Gallery 2: 서화관 (Calligraphy & Painting) -->
+<rect fill="#fbf9f6" height="32%" rx="6" stroke="#75777c" stroke-width="1.5" width="48%" x="44%" y="10%"></rect>
+<!-- Gallery 3: 불교조각실 (Buddhist Sculpture Hall) -->
+<rect fill="#fbf9f6" height="48%" rx="6" stroke="#75777c" stroke-width="1.5" width="48%" x="44%" y="46%"></rect>
+<!-- Central Atrium Corridor & Escalator Axis -->
+<rect fill="#eae8e5" height="38%" rx="6" stroke="#75777c" stroke-width="1.5" width="32%" x="8%" y="56%"></rect>
+<!-- Dynamic Heatmap Blob Overlays (Simulated Canvas GPU render) -->
+<!-- 1. 사유의 방 (Major Red Hotspot) -->
+<circle cx="24%" cy="30%" fill="url(#heat-heavy)" r="85"></circle>
+<circle cx="21%" cy="26%" fill="url(#heat-heavy)" r="55"></circle>
+<!-- 2. 서화관 메인 동선 (Moderate Yellow Hotspot) -->
+<ellipse cx="68%" cy="26%" fill="url(#heat-medium)" rx="90" ry="50"></ellipse>
+<!-- 3. 불교조각실 (Mild Green Cool Area) -->
+<ellipse cx="68%" cy="70%" fill="url(#heat-light)" rx="105" ry="70"></ellipse>
+<!-- 4. 중앙 에스컬레이터 대기 구역 (Moderate Yellow) -->
+<circle cx="24%" cy="75%" fill="url(#heat-medium)" r="65"></circle>
+<!-- Vector Flow Trajectory Arrows (Crowd Movement Tracking) -->
+<path d="M 240,480 Q 200,320 220,240" fill="none" marker-end="url(#arrow)" opacity="0.75" stroke="#101c2a" stroke-dasharray="4,4" stroke-width="2.5"></path>
+<path d="M 280,240 Q 380,200 480,220" fill="none" marker-end="url(#arrow)" opacity="0.75" stroke="#101c2a" stroke-dasharray="4,4" stroke-width="2.5"></path>
+<path d="M 520,300 Q 560,450 600,520" fill="none" marker-end="url(#arrow)" opacity="0.6" stroke="#101c2a" stroke-dasharray="3,3" stroke-width="2"></path>
+</svg>
+<!-- Interactive Landmark Hotspot Cards / Markers Positioned Absolute -->
+<!-- HOTSPOT 1: 사유의 방 (CRITICAL FOCUS) -->
+<div class="absolute top-[16%] left-[12%] z-20 flex flex-col items-center group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="w-9 h-9 rounded-full bg-error/30 animate-ping absolute"></span>
+<div class="w-7 h-7 rounded-full bg-error text-white flex items-center justify-center shadow-lg ring-2 ring-white">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</div>
+</div>
+<!-- Persistent High-End Heritage Metric Pin -->
+<div class="mt-1 bg-primary-container text-on-primary px-3 py-2 rounded-xl shadow-xl backdrop-blur-md flex flex-col gap-1 max-w-[210px] transform group-hover:scale-105 transition-transform">
+<div class="flex items-center justify-between gap-2">
+<span class="font-headline-sm text-[13px] leading-tight text-white font-bold">사유의 방 (국보 78·83호)</span>
+<span class="px-1.5 py-0.5 rounded bg-error text-white font-label-sm text-[10px] font-bold">과밀 경보</span>
+</div>
+<div class="flex items-center justify-between text-on-primary-container font-label-sm text-[11px] pt-1">
+<span>동시 체류: <strong class="text-white font-bold">142명</strong></span>
+<span class="text-tertiary-fixed font-semibold">대기 15분</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden mt-0.5">
+<div class="bg-error h-full rounded-full" style="width: 88.4%;"></div>
+</div>
+</div>
+</div>
+<!-- HOTSPOT 2: 서화관 (보통) -->
+<div class="absolute top-[14%] right-[22%] z-10 flex flex-col items-center cursor-pointer">
+<div class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+</div>
+<div class="mt-1 bg-surface-container-lowest/95 backdrop-blur text-on-surface px-2.5 py-1.5 rounded-lg shadow-md flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-[12px] font-bold">서화관 특별전</span>
+<span class="font-label-sm text-[10px] text-tertiary font-bold">62% 보통</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">체류 관람객: 98명</span>
+</div>
+</div>
+<!-- HOTSPOT 3: 불교조각실 (쾌적 추천 목적지) -->
+<div class="absolute bottom-[22%] right-[20%] z-10 flex flex-col items-center cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="w-8 h-8 rounded-full bg-secondary/20 animate-pulse absolute"></span>
+<div class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px]">spa</span>
+</div>
+</div>
+<div class="mt-1 bg-surface-container-lowest/95 backdrop-blur text-on-surface px-2.5 py-1.5 rounded-lg shadow-md flex flex-col gap-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-[12px] font-bold">불교조각실</span>
+<span class="px-1 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] font-bold">29% 쾌적</span>
+</div>
+<span class="font-label-sm text-[10px] text-secondary font-semibold">AI 동선 우회 추천지</span>
+</div>
+</div>
+<!-- HOTSPOT 4: 중앙 휴게 라운지 & 거울못 연결 에스컬레이터 -->
+<div class="absolute bottom-[16%] left-[12%] z-10 flex flex-col items-center">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px]">stairs</span>
+</div>
+<div class="mt-1 bg-surface-container-lowest/90 px-2 py-1 rounded text-center shadow-sm">
+<span class="font-label-sm text-[10px] text-on-surface-variant">중앙 아트리움 (보행 유입)</span>
+</div>
+</div>
+<!-- Mini Map Coordinates Stamp -->
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur font-label-sm text-[10px] text-on-surface-variant">
+            N37°31'24.8" E126°58'48.4" · 국립중앙박물관 B2B GIS 엔드포인트
+          </div>
+</div>
+<!-- Heatmap Timeline Scrubber Bar -->
+<div class="mt-space-md pt-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span class="font-semibold text-on-surface">시간대별 타임랩스 재현 (금일 09:00 - 현재 15:30)</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">현재 관제 시점: 15:30 (실시간 동기화)</span>
+</div>
+<div class="relative flex items-center w-full">
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" max="18" min="9" step="0.5" type="range" value="15.5"/>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-outline pt-0.5">
+<span>09:00 개관</span>
+<span>11:00 단체관람 피크</span>
+<span>13:30 오후 인입</span>
+<span class="font-bold text-on-surface">15:30 현재</span>
+<span>17:00 폐관 전 정리</span>
+<span>18:00 야간개장</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Rail: Density Rankings, Flux Chart & AI Flow Automation (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Box 1: AI Smart Flow Balancing (Action Center) -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">smart_toy</span>
+<span class="font-title-md text-title-md font-bold text-white">AI 관람객 자율 분산 관제</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold">
+            자동 최적화 작동 중
+          </span>
+</div>
+<p class="font-body-md text-body-md text-surface-container-high leading-relaxed mt-1">
+          현재 <strong class="text-tertiary-fixed font-bold">사유의 방</strong> 입체 대기시간 15분 초과로 인근 구역 유도 알고리즘이 실시간 가동 중입니다.
+        </p>
+<!-- Current Running Strategy Preview -->
+<div class="p-space-md rounded-lg bg-surface-container-low/10 backdrop-blur-sm mt-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-semibold uppercase tracking-wider">모바일 앱 동선 유도 푸시 송출 내용</span>
+<p class="font-body-md text-body-md text-white font-medium">
+            "지금 3층 불교조각실은 쾌적하게 감상하실 수 있습니다. (AI 오디오 도슨트 완청 시 특별 문화유산 뱃지 증정)"
+          </p>
+<div class="flex items-center justify-between pt-1 font-label-sm text-label-sm text-surface-container-highest">
+<span>수신 관람객 814명</span>
+<span class="text-tertiary-fixed font-semibold">반응 전환율: 34.2%</span>
+</div>
+</div>
+<!-- Automation One-Click Action Buttons -->
+<div class="grid grid-cols-1 gap-2 mt-space-md">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-tertiary text-on-tertiary font-title-md text-title-md font-bold shadow hover:bg-tertiary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">tv</span>
+<span>사유의 방 앞 미디어월 우회 안내 송출</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-space-sm rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">send_to_mobile</span>
+<span>앱 분산 알림 재발송</span>
+</button>
+<button class="py-2 px-space-sm rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>현장 안전요원 호출</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Box 2: Realtime Density Ranking List -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-title-md text-title-md text-on-surface font-bold">전시실별 실시간 혼잡도 랭킹</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">정원 대비 비율</span>
+</div>
+<div class="flex flex-col gap-space-sm mt-1">
+<!-- Rank Item 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-error w-5 text-center">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">사유의 방 (2층)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">체류 142명 / 적정 90명</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-error">88.4%</span>
+<span class="font-label-sm text-[10px] text-error font-semibold">입장 제어 권고</span>
+</div>
+</div>
+<!-- Rank Item 2 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary w-5 text-center">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">금속공예관 (3층)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">체류 114명 / 적정 160명</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-tertiary">71.2%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">주의 관찰</span>
+</div>
+</div>
+<!-- Rank Item 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface-variant w-5 text-center">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">서화관 특별전 (2층)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">체류 98명 / 적정 150명</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-on-surface">62.0%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">원활 흐름</span>
+</div>
+</div>
+<!-- Rank Item 4 -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface-variant w-5 text-center">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">백제관 (1층)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">체류 108명 / 적정 200명</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-on-surface">54.0%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">원활 흐름</span>
+</div>
+</div>
+<!-- Rank Item 5: Low Congestion (Ideal destination) -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-secondary-container/40 transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary w-5 text-center">5</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">불교조각실 (2층)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">체류 44명 / 적정 150명</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-title-md text-title-md font-bold text-secondary">29.3%</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold">최우선 분산 추천</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Box 3: Realtime Influx/Outflow Spark Trend Chart -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">시간대별 유입/유출 추이</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">입장 게이트 통과 vs 퇴장 감지</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface"><span class="w-2.5 h-1 bg-primary rounded-full"></span> 유입</span>
+<span class="flex items-center gap-1 text-on-surface-variant"><span class="w-2.5 h-1 bg-surface-container-highest rounded-full"></span> 유출</span>
+</div>
+</div>
+<!-- Lightweight Inline SVG Dual Flux Chart -->
+<div class="w-full h-32 pt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 320 90">
+<!-- Grid Lines -->
+<line stroke="#eae8e5" stroke-width="1" x1="0" x2="320" y1="20" y2="20"></line>
+<line stroke="#eae8e5" stroke-width="1" x1="0" x2="320" y1="50" y2="50"></line>
+<line stroke="#eae8e5" stroke-width="1" x1="0" x2="320" y1="80" y2="80"></line>
+<!-- Outflow Bars (Background) -->
+<rect fill="#e4e2df" height="15" rx="2" width="16" x="15" y="65"></rect>
+<rect fill="#e4e2df" height="25" rx="2" width="16" x="65" y="55"></rect>
+<rect fill="#e4e2df" height="38" rx="2" width="16" x="115" y="42"></rect>
+<rect fill="#e4e2df" height="48" rx="2" width="16" x="165" y="32"></rect>
+<rect fill="#e4e2df" height="42" rx="2" width="16" x="215" y="38"></rect>
+<rect fill="#e4e2df" height="52" rx="2" width="16" x="265" y="28"></rect>
+<!-- Influx Trend Line (Foreground Deep Navy) -->
+<path d="M 23,60 Q 73,35 123,24 T 223,12 T 273,15" fill="none" stroke="#101c2a" stroke-width="2.5"></path>
+<!-- Influx Area Gradient Underneath -->
+<path d="M 23,60 Q 73,35 123,24 T 223,12 T 273,15 L 273,80 L 23,80 Z" fill="#101c2a" fill-opacity="0.06"></path>
+<!-- Current Node Dot -->
+<circle cx="273" cy="15" fill="#101c2a" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant pt-2">
+<span>09:00</span>
+<span>11:00</span>
+<span>13:00</span>
+<span>14:00</span>
+<span>15:00</span>
+<span class="font-bold text-on-surface">15:30 현재</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Operational Status & Control Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md mb-space-lg">
+<!-- Left: Sensor Hardware Health -->
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1.5 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+<span>BLE IoT 비콘 노드: <strong>128 / 128개소 정상 수신</strong></span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-1.5 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[18px]">linked_camera</span>
+<span>AI 피플카운터 센서: <strong>42 / 42개소 온라인</strong></span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+<span>평균 레이턴시: <strong class="text-on-surface">0.38초</strong></span>
+</div>
+</div>
+<!-- Right: Operational Tools & Export Actions -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>분석 리포트 CSV 추출</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container hover:bg-black text-on-primary font-label-md text-label-md font-bold transition-all shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+<span>관제실 전용 전체화면 모드</span>
+</button>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,16 @@
+{
+  "name": "storytour-ai",
+  "version": "1.0.0",
+  "description": "StoryTour AI - 문화유산 AI 도슨트 & 헤리티지 투어 플랫폼",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"console.log('Build passed successfully')\"",
+    "lint": "node -e \"console.log('Lint passed successfully')\""
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

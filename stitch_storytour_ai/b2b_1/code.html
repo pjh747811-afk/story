@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#e4e2df","surface-container":"#efeeeb","inverse-surface":"#30312f","on-error":"#ffffff","surface-container-high":"#eae8e5","surface-container-lowest":"#ffffff","outline-variant":"#c5c6cc","surface-dim":"#dbdad7","on-tertiary-fixed-variant":"#574500","on-surface-variant":"#44474c","on-secondary-fixed-variant":"#4c4636","on-tertiary":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","inverse-primary":"#bbc7db","secondary-fixed":"#ece2cc","on-primary-fixed-variant":"#3c4857","tertiary-fixed-dim":"#e9c349","on-secondary-fixed":"#201b0e","secondary":"#655e4d","error":"#ba1a1a","primary-fixed":"#d7e3f7","background":"#fbf9f6","tertiary-container":"#cca730","on-primary-container":"#798596","surface-variant":"#e4e2df","on-secondary-container":"#696251","primary-container":"#101c2a","primary-fixed-dim":"#bbc7db","on-error-container":"#93000a","outline":"#75777c","secondary-container":"#e9dfc9","on-surface":"#1b1c1a","on-primary":"#ffffff","primary":"#000000","secondary-fixed-dim":"#cfc6b0","surface-container-low":"#f5f3f0","surface-tint":"#535f70","tertiary":"#735c00","on-tertiary-fixed":"#241a00","on-primary-fixed":"#101c2a","tertiary-fixed":"#ffe088","surface":"#fbf9f6","surface-bright":"#fbf9f6","on-background":"#1b1c1a","on-tertiary-container":"#4f3e00","inverse-on-surface":"#f2f0ed"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2.5rem","margin":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem","space-md":"1rem","gutter":"1rem"},fontFamily:{"headline-sm":["Noto Serif"],"headline-lg":["Noto Serif"],"label-md":["Manrope"],"display-lg":["Noto Serif"],"body-lg":["Manrope"],"headline-lg-mobile":["Noto Serif"],"display-lg-mobile":["Noto Serif"],"label-sm":["Manrope"],"title-md":["Manrope"],"body-md":["Manrope"]},fontSize:{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"title-md":["17px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm mb-space-md"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">StoryTour AI</span><span class="font-label-sm text-label-sm text-tertiary tracking-wider uppercase font-semibold">Enterprise Portal</span></div></div><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">museum</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant">관리 대상 기관</span><span class="font-body-md text-body-md text-on-surface font-semibold truncate max-w-[130px]">국립중앙박물관</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><nav class="flex flex-col px-space-md gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary font-semibold shadow-sm" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">대시보드 요약</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="docent-content-cms" href="#"><span class="material-symbols-outlined text-[20px]">record_voice_over</span><span class="font-body-md text-body-md">AI 해설 콘텐츠 관리</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="qr-and-beacon-manager" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span class="font-body-md text-body-md">QR 코드 &amp; 비콘 관리</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audience-analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-body-md text-body-md">관람객 실시간 통계</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="multilingual-engine" href="#"><span class="material-symbols-outlined text-[20px]">translate</span><span class="font-body-md text-body-md">다국어 번역 엔진</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="custom-branding-and-settings" href="#"><span class="material-symbols-outlined text-[20px]">palette</span><span class="font-body-md text-body-md">기관 브랜딩 및 설정</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="enterprise-billing" href="#"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="font-body-md text-body-md">구독 및 API 플랜</span></a></nav></div><div class="p-space-md flex flex-col gap-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">시스템 현황</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>가동중 99.98%</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">클라우드 실시간 음성합성 엔진</span></div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px]">help_center</span><span class="font-label-md text-label-md">공공기관 기술지원 데스크</span></div><span class="material-symbols-outlined text-[16px]">north_east</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="text-secondary">스토리투어 B2B</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">국립중앙박물관 지회</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-72 lg:w-96 pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="전시관, 소장품 ID, 도슨트 스크립트 검색..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[16px] text-tertiary">groups</span><span class="font-label-sm text-label-sm font-semibold">실시간 관람객 청취중:</span><span class="font-label-md text-label-md font-bold text-on-surface">1,428명</span></div><button class="relative w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden lg:flex"><span class="font-title-md text-title-md text-on-surface leading-tight">김선우</span><span class="font-label-sm text-label-sm text-on-surface-variant">학예연구팀장 / 관리자</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Utility Context Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md py-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">home</span>
+        기관 관리자 홈
+      </span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">대시보드 요약 (국립중앙박물관 상설전시관)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span>실시간 데이터 수신 중 (10초 주기 갱신)</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-md text-label-md flex items-center gap-1 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+        필터: 오늘 전체
+      </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        통계 리포트 생성
+      </button>
+</div>
+</div>
+<!-- KPI Metrics 4-Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">오늘 누적 도슨트 청취수</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold">14,892</span>
+<span class="font-title-md text-title-md text-on-surface-variant">회</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/60 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">headphones</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold bg-secondary-fixed/50 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +18.4%
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">전주 대비 (동시간 기준)</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-tertiary/5 pointer-events-none"></div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">활성 현장 QR 스캔</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold">3,240</span>
+<span class="font-title-md text-title-md text-on-surface-variant">건</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1 truncate max-w-[140px]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+          반가사유상관 1위
+        </span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">1,210회 (37%)</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-primary/5 pointer-events-none"></div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">AI 실시간 질의응답 처리</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold">5,821</span>
+<span class="font-title-md text-title-md text-on-surface-variant">건</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+          평균 응답 <strong class="text-on-surface">0.8초</strong>
+</span>
+<span class="flex items-center gap-0.5 font-label-sm text-label-sm font-bold text-tertiary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          4.92 / 5.0
+        </span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-20 h-20 rounded-full bg-secondary/5 pointer-events-none"></div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">다국어 이용 비율</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">국내외 복합 4개국어</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">language</span>
+</div>
+</div>
+<div class="mt-4 pt-2 flex flex-col gap-1.5">
+<div class="w-full h-2 rounded-full overflow-hidden flex bg-surface-container-high">
+<div class="bg-primary-container" style="width: 58%;" title="한국어 58%"></div>
+<div class="bg-tertiary-container" style="width: 24%;" title="영어 24%"></div>
+<div class="bg-secondary" style="width: 11%;" title="일본어 11%"></div>
+<div class="bg-outline-variant" style="width: 7%;" title="중국어 7%"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-label-sm text-on-surface-variant pt-0.5">
+<span>한 58%</span>
+<span>영 24%</span>
+<span>일 11%</span>
+<span>중 7%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric 2-Column Content Area (7:5 split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (Span 7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Interactive Real-time Visitor Flow & Audio Consumption Chart Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary tracking-wider font-semibold uppercase">Hourly Visitor Velocity</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">시간대별 도슨트 청취 트렌드 &amp; 밀집도</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              피크구간 14:00 - 16:00
+            </span>
+<div class="flex bg-surface-container-high p-0.5 rounded-lg text-label-sm font-label-sm text-on-surface-variant">
+<button class="px-2.5 py-0.5 rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm">청취수</button>
+<button class="px-2.5 py-0.5 rounded text-on-surface-variant hover:text-on-surface">체류시간</button>
+</div>
+</div>
+</div>
+<!-- SVG Timeline Chart Representation -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant px-2">
+<span>청취 세션 (건수)</span>
+<span class="flex items-center gap-4">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>오늘 실시간</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-sm bg-outline-variant"></span>전주 평균</span>
+</span>
+</div>
+<div class="relative w-full h-44 flex items-end">
+<!-- Inline Chart Graphic -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 160">
+<defs>
+<lineargradient id="primaryGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#101c2a" stop-opacity="0.28"></stop>
+<stop offset="100%" stop-color="#101c2a" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="goldPeakGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#cca730" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#cca730" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid horizontal lines -->
+<line stroke="#e4e2df" stroke-dasharray="4 4" x1="0" x2="600" y1="20" y2="20"></line>
+<line stroke="#e4e2df" stroke-dasharray="4 4" x1="0" x2="600" y1="70" y2="70"></line>
+<line stroke="#e4e2df" stroke-dasharray="4 4" x1="0" x2="600" y1="120" y2="120"></line>
+<!-- Peak highlight zone (14:00 to 16:00 approx X: 320 to 440) -->
+<rect fill="url(#goldPeakGradient)" height="150" rx="6" width="120" x="320" y="0"></rect>
+<!-- Benchmark dotted line -->
+<path d="M 10 140 Q 80 135 150 115 T 300 80 T 450 65 T 590 120" fill="none" opacity="0.6" stroke="#75777c" stroke-dasharray="3 3" stroke-width="2"></path>
+<!-- Main Active Curve Area Fill -->
+<path d="M 10 150 L 10 142 Q 70 140 120 125 T 220 95 T 310 60 T 380 25 T 450 40 T 520 90 T 590 135 L 590 150 Z" fill="url(#primaryGradient)"></path>
+<!-- Main Solid Line -->
+<path d="M 10 142 Q 70 140 120 125 T 220 95 T 310 60 T 380 25 T 450 40 T 520 90 T 590 135" fill="none" stroke="#101c2a" stroke-linecap="round" stroke-width="3"></path>
+<!-- Peak Data Pulse Circle (at 15:00, x=380, y=25) -->
+<circle cx="380" cy="25" fill="#cca730" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<circle class="animate-ping" cx="380" cy="25" fill="#cca730" opacity="0.3" r="10"></circle>
+</svg>
+</div>
+<!-- Timeline X-Axis Labels -->
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant pt-2 border-t-0">
+<span>09:00</span>
+<span>10:30</span>
+<span>12:00</span>
+<span>13:30</span>
+<span class="text-tertiary font-bold bg-surface-container px-1.5 py-0.5 rounded">15:00 (최고치 2,410건)</span>
+<span>16:30</span>
+<span>18:00</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">순수 오디오 청취 집중도</span>
+<span class="font-title-md text-title-md text-on-surface font-bold mt-0.5">84.2%</span>
+<span class="text-[11px] text-on-surface-variant font-label-sm">배경음악 유지율 우수</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">평균 세션 체류 시간</span>
+<span class="font-title-md text-title-md text-on-surface font-bold mt-0.5">18분 42초</span>
+<span class="text-[11px] text-tertiary font-label-sm font-semibold">+3분 10초 관람 연장 효과</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high/60 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">동시 동기화 비콘 존</span>
+<span class="font-title-md text-title-md text-on-surface font-bold mt-0.5">38 / 42 존</span>
+<span class="text-[11px] text-on-surface-variant font-label-sm">현장 정상 감응중</span>
+</div>
+</div>
+</div>
+<!-- Popular Exhibition Docent Ranking Table -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary tracking-wider font-semibold uppercase">Docent Playback &amp; Content Registry</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">전시품별 실시간 도슨트 소비 순위</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-on-surface-variant text-[16px]">search</span>
+<input class="pl-8 pr-3 py-1.5 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface text-xs focus:outline-none" placeholder="소장품 검색..." type="text"/>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-dim text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left border-collapse min-w-[620px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-3 rounded-l-lg">순위 / 전시물명</th>
+<th class="py-3 px-3">분류 및 QR ID</th>
+<th class="py-3 px-3 text-right">오늘 스캔</th>
+<th class="py-3 px-3 text-center">완청률</th>
+<th class="py-3 px-3">AI 최다 질문 키워드</th>
+<th class="py-3 px-3 text-right rounded-r-lg">콘텐츠 관리</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">1</span>
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up artistic photograph of the Korean National Treasure Gilt-bronze Maitreya in Meditation Bodhisattva in warm museum lighting showcasing solemn bronze details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABSa8gcH6MunuvwR0mYI3Q6BRLjIxzRT9YjS8HjvD8IZszyjyG3boRltGno4Ao8JA3JhLUtp2H_1zHx9v8G5vI4VWiJ17X2aF-TjVMXd8uo44LyqRT5zBqaaf_GTAHwkIotiWHgvj4YuToMsbPAILwKbbBEwB14uTMjhfX4zbqB6pYK8D_07bxfsgWAtUv4mwAeNDLw8HqofdJUyurETOVX0ZKTO2PwCUL_LqdQyK1"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">국보 반가사유상 (78호)</span>
+<span class="font-label-sm text-label-sm text-tertiary">사유의 방 (상설전시 2층)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">불교조각 / 국보</span>
+<code class="text-[11px] font-mono text-on-surface-variant bg-surface-container px-1 py-0.5 rounded w-fit mt-0.5">QR-NMK-084</code>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface">4,210회</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">평균 4분 12초</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">91.4%</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 91.4%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm truncate max-w-[130px]" title="미소의 비밀 &amp; 제작기법">
+                    미소의 비밀 &amp; 제작기법
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="QR 코드 다운로드">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="해설 대본 편집">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">2</span>
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Detailed view of the Silla Gold Crown from Geumgwanchong with jade pendants reflecting bright museum gallery spotlights on an antique velvet mount" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpriDeHhyfztHuRPxZDeBRcsVwtQ7pKBPxJ8iZUc1nwtQcEB1P3y7fYZMRmxxwPm1OTpEbuPgLnJn4R0aEEXczhwLaoyck7qhg2Ybi6gQcRRY29N9VtneAvls-Isfj7UofAoMavY2wZSQ2wJYGKDGurNEL3s3Bapey-5gLVVjS9uuiM9q3PGeB_uUTxM-Uvcv5dlnMrUX_RxPVdSSyufL2x5jAMvYKBXYlOIClcRve"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">신라 금관총 금관</span>
+<span class="font-label-sm text-label-sm text-tertiary">신라실 (상설전시 1층)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">고대공예 / 국보</span>
+<code class="text-[11px] font-mono text-on-surface-variant bg-surface-container px-1 py-0.5 rounded w-fit mt-0.5">QR-NMK-102</code>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface">3,120회</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">평균 3분 05초</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">86.2%</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 86.2%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm truncate max-w-[130px]" title="곡옥의 상징적 의미">
+                    곡옥의 상징적 의미
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="QR 코드 다운로드">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="해설 대본 편집">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">3</span>
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Gilt-bronze Incense Burner of Baekje showcasing intricate relief carvings of mythical creatures, musicians and lotus petals in a pristine gallery glass case" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJQx_0Popr0VjcYdyraEkToZbpNp-mvQxc3qfjUDv842aIHIigaLgms1m-PWuhd0Fs1U7UqIUxb15-6ZAP4ryPYFN3flE8EIWJ-r_JQ-lm716H8ZD1MnVoXBsReyHST7jyNt59bz4VcuqypOgli-5Oh9T8W-XNNuGWcNXlP3dgQeiKYw_XY8WvWPgOefO5EvCMWVFlvIUkhZKrCQGO41FsBnNBawfDIa6b0UjFU9PO"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">백제 금동대향로</span>
+<span class="font-label-sm text-label-sm text-tertiary">백제실 (상설전시 1층)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">불교의식구 / 국보</span>
+<code class="text-[11px] font-mono text-on-surface-variant bg-surface-container px-1 py-0.5 rounded w-fit mt-0.5">QR-NMK-041</code>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface">2,890회</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">평균 3분 48초</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">88.5%</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 88.5%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm truncate max-w-[130px]" title="꼭대기 봉황과 5악사">
+                    꼭대기 봉황과 5악사
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="QR 코드 다운로드">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="해설 대본 편집">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">4</span>
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Chosun Dynasty white porcelain Moon Jar Dalhangari displaying subtle natural curves and milky white glaze against a quiet minimalist dark backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHK6fIqJRI1KuRWph713JUvBKqSMFP9lMrjqdqVi3omyoQQvhB3jA8RDqRzK8m5wENjJzoe9Z3cVBbIj80fQsP8TzRREPrrHCYVfS6APXGUkfLof8tO-Mlk7-iP92JjWB0CrAY1P_g8rmF5iugn-eyYyeLxKNhF04yB8r2adr_ED9aeRUGnRklZxFOEbR49EyEqpuwcRwhR2jOGdV-2dMfcez1rfN5U5N0IPuZvKG4"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">백자 달항아리</span>
+<span class="font-label-sm text-label-sm text-tertiary">도자공예실 (상설전시 3층)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">조선도자 / 보물</span>
+<code class="text-[11px] font-mono text-on-surface-variant bg-surface-container px-1 py-0.5 rounded w-fit mt-0.5">QR-NMK-115</code>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex flex-col items-end">
+<span class="font-bold text-on-surface">1,980회</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">평균 2분 30초</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">79.0%</span>
+<div class="w-16 h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 79.0%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-block px-2 py-1 rounded bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm truncate max-w-[130px]" title="좌우 비대칭의 미학">
+                    좌우 비대칭의 미학
+                  </span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="QR 코드 다운로드">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+</button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="해설 대본 편집">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">총 128개 전시 해설 자산 중 상위 4개 노출</span>
+<a class="font-label-md text-label-md text-tertiary hover:underline font-semibold flex items-center gap-1" href="#">
+            전체 전시품 도슨트 스크립트 관리 바로가기
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (Span 5) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Live QR Code & Beacon Zone Management Widget -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary tracking-wider font-semibold uppercase">Physical Spatial Gateway</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">QR 코드 &amp; 비콘 존 상태 관리</h3>
+</div>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+</span>
+</div>
+<!-- Sync status notification banner -->
+<div class="p-3 rounded-lg bg-secondary-container/50 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-secondary-container font-semibold">비콘 인프라 자동 동기화 완료</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5">
+              상설전시실 42개 비콘 및 128개 표지판 QR 메타데이터가 100% 정상 작동 중입니다.
+            </span>
+</div>
+</div>
+<!-- Action trigger buttons -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="py-2.5 px-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            신규 QR 코드 발급
+          </button>
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">print</span>
+            인쇄용 일괄 다운로드
+          </button>
+</div>
+<!-- Physical QR Stand Preview Module -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">storefront</span>
+              현장 스탠드용 골드 프레임 템플릿
+            </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-secondary-fixed/60 px-2 py-0.5 rounded">A5 아크릴 규격</span>
+</div>
+<!-- Stylized Mock QR Stand Preview -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<!-- Simulated QR Visual Box with Royal Gold Accent -->
+<div class="w-24 h-24 rounded-lg bg-primary-container p-2 flex flex-col items-center justify-between text-tertiary-fixed shrink-0 relative overflow-hidden shadow-inner">
+<div class="w-full flex justify-between items-center text-[8px] font-mono tracking-widest text-tertiary-fixed-dim">
+<span>NMK-AI</span>
+<span>DOCENT</span>
+</div>
+<!-- Simulated QR Core pattern -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1 rounded grid grid-cols-4 gap-0.5">
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-surface-container-lowest"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-surface-container-lowest"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-surface-container-lowest"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-surface-container-lowest"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-surface-container-lowest"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+<div class="bg-primary-container rounded-[1px]"></div>
+</div>
+<span class="text-[8px] tracking-tight font-semibold text-tertiary">스캔하여 음성듣기</span>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">국립중앙박물관 공식 스탠드</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs mt-0.5">황동 헤어라인 메탈 플레이트 마감</span>
+<div class="flex items-center gap-2 mt-2">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-highest text-on-surface text-label-sm font-label-sm font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+                  미리보기
+                </button>
+<button class="px-2.5 py-1 rounded bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container text-label-sm font-label-sm font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">picture_as_pdf</span>
+                  PDF (벡터)
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-time Visitor AI Questions Cloud Widget -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary tracking-wider font-semibold uppercase">Real-Time Docent Inquiries</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">관람객 실시간 AI 질문 키워드</h3>
+</div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-tertiary font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            LIVE
+          </div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Question 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between group">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-tertiary font-bold text-xs flex items-center justify-center shrink-0">Q</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">"반가사유상 두 구의 미소 차이는?"</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">78호 vs 83호 표정 비교 질문 급증</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">142회</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between group">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-tertiary font-bold text-xs flex items-center justify-center shrink-0">Q</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">"금동대향로 꼭대기 봉황의 의미"</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">도교사상과 5악기 배치 해설 요청</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">98회</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between group">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-tertiary font-bold text-xs flex items-center justify-center shrink-0">Q</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">"신라 금관은 실제로 머리에 썼나요?"</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px]">장례용 의례구 여부 질의 다수</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">67회</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">child_care</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">어린이 눈높이 질의 비율:</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">전체의 34.2% (자동 친화 모드 전환됨)</span>
+</div>
+</div>
+<!-- Multilingual AI Voice Engine Status Card -->
+<div class="p-space-lg rounded-xl bg-primary-container text-on-primary shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary-fixed tracking-wider uppercase font-semibold">Heritage Neural Voice Synthesis</span>
+<h4 class="font-headline-sm text-headline-sm text-on-primary mt-0.5">다국어 AI 도슨트 엔진 가동 상태</h4>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<div class="flex flex-col gap-2.5 relative z-10">
+<!-- Voice item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest/10 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">graphic_eq</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-semibold text-xs">한국어 (학예연구사 전용 모델)</span>
+<span class="font-label-sm text-label-sm text-on-primary-container text-[11px]">신뢰도 높은 학술 딕션 모드</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold">활성화됨</span>
+</div>
+<!-- Voice item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest/10 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">graphic_eq</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-semibold text-xs">영어 (Native Museum Curator EN-US)</span>
+<span class="font-label-sm text-label-sm text-on-primary-container text-[11px]">대영박물관 및 메트로폴리탄 협력 톤</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold">동기화 완료</span>
+</div>
+<!-- Voice item 3 -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest/10 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">graphic_eq</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary font-semibold text-xs">일어 / 중어 (동시 번역 음성 엔진)</span>
+<span class="font-label-sm text-label-sm text-on-primary-container text-[11px]">고유명사 한자 표기 검수 100% 완료</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold">정상 가동</span>
+</div>
+</div>
+<div class="pt-1 flex items-center justify-between text-xs text-on-primary-container relative z-10">
+<span>평균 음성 생성 딜레이: <strong>0.32초</strong></span>
+<button class="text-tertiary-fixed hover:underline flex items-center gap-1 font-semibold">
+            음성 파라미터 조정
+            <span class="material-symbols-outlined text-[14px]">settings</span>
+</button>
+</div>
+<!-- Ambient decorative background glow -->
+<div class="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-tertiary-container/10 filter blur-2xl pointer-events-none"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Admin Action & Status Bar -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold text-sm">스토리투어 AI 엔터프라이즈 v4.8</span>
+</div>
+<span class="text-outline text-xs">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+        관리 기관: <strong class="text-on-surface">대한민국 문화체육관광부 소속 국립중앙박물관</strong>
+</span>
+<span class="text-outline text-xs hidden sm:inline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline">
+        최근 백업: 오늘 16:30 (클라우드 안전 암호화 저장됨)
+      </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-md text-label-md font-semibold transition-colors">
+        시스템 로그 감사
+      </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+        전체 전시관 즉시 동기화
+      </button>
+</div>
+</div>
+</div></main></div></body></html>

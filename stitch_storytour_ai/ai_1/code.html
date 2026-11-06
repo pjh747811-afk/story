@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fbf9f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#bbc7db", "on-tertiary-container": "#4f3e00", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "on-primary-fixed": "#101c2a", "background": "#fbf9f6", "outline": "#75777c", "primary": "#000000", "on-tertiary-fixed-variant": "#574500", "on-surface": "#1b1c1a", "on-primary": "#ffffff", "primary-fixed": "#d7e3f7", "on-tertiary-fixed": "#241a00", "inverse-surface": "#30312f", "on-primary-container": "#798596", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf9f6", "tertiary-fixed": "#ffe088", "secondary-fixed": "#ece2cc", "secondary-container": "#e9dfc9", "on-error": "#ffffff", "secondary": "#655e4d", "surface-container-high": "#eae8e5", "inverse-on-surface": "#f2f0ed", "outline-variant": "#c5c6cc", "on-error-container": "#93000a", "inverse-primary": "#bbc7db", "on-primary-fixed-variant": "#3c4857", "tertiary": "#735c00", "on-surface-variant": "#44474c", "on-background": "#1b1c1a", "surface-tint": "#535f70", "surface": "#fbf9f6", "error-container": "#ffdad6", "tertiary-fixed-dim": "#e9c349", "on-secondary-fixed-variant": "#4c4636", "surface-container-low": "#f5f3f0", "on-secondary-fixed": "#201b0e", "primary-container": "#101c2a", "secondary-fixed-dim": "#cfc6b0", "surface-dim": "#dbdad7", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#efeeeb", "surface-variant": "#e4e2df", "on-secondary-container": "#696251", "tertiary-container": "#cca730" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1.25rem", "space-md": "1rem" }, fontFamily: { "label-sm": ["Manrope"], "label-md": ["Manrope"], "headline-lg-mobile": ["Noto Serif"], "body-lg": ["Manrope"], "display-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "headline-sm": ["Noto Serif"], "title-md": ["Manrope"], "body-md": ["Manrope"], "display-lg": ["Noto Serif"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="StoryTour AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI5vlm8DM1nX_TGrQw49u9O0ctRGkmoDbsjNC08yvYwHYfbguzxjBFMQphcGOpEXfDAQST_Qf5uoO182DeKkQ6LMz0HzUyHnyA9ZnztFer_C5Ltbg9PtsctQQoShn3OBSglxIVLAEmfoUAguOLDED5pJo7BbxgAd10lOvIHAegoxNb2_67UMG30PkjgRttCm6shvFC3hPk9Yp1EqAF5qO7BdQ5fAXeC8CmrsCYdtto"/><h1 class="font-title-md text-title-md text-primary-container truncate max-w-[160px]">Heritage Story Detail</h1></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrxttk_LDqNX4S883MLXzNrak2d_h7E0k9T4TniaHn2c2awcYaCMnc2yee5AdWgq0WaPwCuCW4Bw3Xy5ZCJopPC5OetldvWGQj34Ya9lUJ0A2cxbfqGWKY3M-EYnzj72TNR15myMaGbCZ_U1dunE0aJhNyuTbflmJ-ofYbWLj4VoXGldhqKxnrFNC83t9YnOOvASj4xsmRzpL6TurBHT1kt3HudmHtpOlxDMUxRi-f"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Visual Hero Section with Heritage Scrim & Context -->
+<div class="relative w-full h-80 overflow-hidden shadow-md">
+<div class="w-full h-full bg-cover bg-center transform scale-105 transition-transform duration-700" data-alt="Majestic morning view of Geunjeongjeon Hall in Gyeongbokgung Palace with textured coarse granite courtyard, traditional Korean multi-tiered wooden architecture, gilded dragon eaves catching warm natural sunlight, editorial architectural photography tone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbmr6uYwz9lrNzFnx-hD5dO6ipbQ8HBKHykR2MqekzbYI0S72jZ7Gzsk7GQcmU7Hb1ZXT8OPn_w2PeiwagHrChR_5ya8GJleHmZYa0oU1XXDIH9NtU9vY3R0U7d7ahwrSirBY8x_Xl0i2EBAXcw68X5ZgimYLCTekBCo7w98ieYj9B8qutq6r_T3emXs1T82G-CtLilhfCvd2-dZLGz6NZ84GtbVq_ZkHBwHKPU0fH')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<!-- Top Action Badges inside Hero -->
+<div class="absolute top-4 left-margin right-margin flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 text-primary-container font-label-md text-label-md shadow-sm backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+        국보 제223호
+      </span>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-full bg-primary-container/60 backdrop-blur-md text-on-primary flex items-center justify-center transition-colors active:scale-95" id="btn-bookmark" onclick="toggleBookmark()">
+<span class="material-symbols-outlined text-[20px]" id="bookmark-icon">bookmark_border</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-primary-container/60 backdrop-blur-md text-on-primary flex items-center justify-center transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Monument Title & Hashtags -->
+<div class="absolute bottom-4 left-margin right-margin text-on-primary flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-primary-container/70 text-on-primary-container font-label-sm text-label-sm backdrop-blur-sm">#조선건축</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/70 text-on-primary-container font-label-sm text-label-sm backdrop-blur-sm">#정도전</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/70 text-on-primary-container font-label-sm text-label-sm backdrop-blur-sm">#왕실의례</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/70 text-on-primary-container font-label-sm text-label-sm backdrop-blur-sm">#월대석수</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-surface-bright">경복궁 근정전 <span class="font-body-md text-body-md opacity-80 font-normal">景福宮 勤政殿</span></h2>
+<p class="font-body-md text-body-md text-surface-container-highest line-clamp-1">조선 왕실의 권위와 국가 의례가 집약된 정전(正殿)</p>
+</div>
+</div>
+<!-- Main Body Content Container -->
+<div class="flex flex-col gap-6 px-margin mt-5">
+<!-- 1. Customized Filter System (Audience & Duration) -->
+<div class="flex flex-col gap-3.5 bg-surface-container-low p-4 rounded-xl shadow-sm">
+<!-- Audience Filter Title & Pills -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">청취 대상 및 해설 난이도</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> AI 맞춤 각색
+          </span>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1">
+<button class="aud-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface-variant" onclick="selectAudience(this)">
+            초등 눈높이 🎈
+          </button>
+<button class="aud-pill active-aud whitespace-nowrap px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" onclick="selectAudience(this)">
+            일반 꿀잼 스토리 🌟
+          </button>
+<button class="aud-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface-variant" onclick="selectAudience(this)">
+            역사 매니아 심층 📜
+          </button>
+<button class="aud-pill whitespace-nowrap px-3 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-highest text-on-surface-variant" onclick="selectAudience(this)">
+            가족 동반 모드 👨‍👩‍👧‍👦
+          </button>
+</div>
+</div>
+<!-- Duration Segmented Selector -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-md text-label-md text-secondary">재생 길이 선택</span>
+<div class="grid grid-cols-3 p-1 rounded-lg bg-surface-container-high gap-1 text-center font-label-md text-label-md">
+<button class="dur-tab py-1.5 rounded text-on-surface-variant transition-colors" onclick="selectDuration(this, '0:30', '30초')">30초 핵심</button>
+<button class="dur-tab py-1.5 rounded bg-surface-container-lowest text-primary-container shadow-sm font-semibold transition-colors" onclick="selectDuration(this, '3:40', '3분')">3분 몰입 스토리</button>
+<button class="dur-tab py-1.5 rounded text-on-surface-variant transition-colors" onclick="selectDuration(this, '5:20', '5분')">5분 심층 탐구</button>
+</div>
+</div>
+</div>
+<!-- 2. Integrated AI Audio Docent Console -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-4 shadow-md gap-3.5">
+<!-- Docent Header & Spatial Audio Indicator -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portrait of thoughtful young Korean female cultural docent named Su-ah, intelligent and gentle smile, natural daylight, warm editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMr4CjQ4dnuYKhR9fkURYIx8B8ixP0Abj2qk1Dcejr3RHC62uL4EYsRADfhgTN2Ibui8AnySt4Rawv3DGfjKrZSGqnkOOPlefj1ScNjuH4H8cgwDrHf7ORyisrseFNTUerDXEGCJlIldHnVXFM4d5JfnrRImt8Kv0FTWyiqfo79SSodbLydvny2INv89lVDR_LOaNmrnJa6Jip2soWls0mx7ZDiWkBHaAzDMWqrnww"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">도슨트 수아</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">성우 음성</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">지적이고 따뜻한 서사형 보이스</span>
+</div>
+</div>
+<!-- Spatial Audio Mode Badge -->
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">headphones</span>
+<span class="font-semibold">공간음향 ON</span>
+</div>
+</div>
+<!-- Realtime Waveform Visualization -->
+<div class="w-full h-8 flex items-center justify-between px-2 gap-1 bg-surface-container-low rounded-lg overflow-hidden py-1">
+<div class="w-1 rounded-full bg-tertiary-container animate-pulse h-3"></div>
+<div class="w-1 rounded-full bg-primary-container h-5"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-7 animate-pulse"></div>
+<div class="w-1 rounded-full bg-primary-container h-4"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-6"></div>
+<div class="w-1 rounded-full bg-primary-container h-8 animate-pulse"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-5"></div>
+<div class="w-1 rounded-full bg-primary-container h-3"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-7 animate-pulse"></div>
+<div class="w-1 rounded-full bg-primary-container h-6"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-4"></div>
+<div class="w-1 rounded-full bg-primary-container h-7 animate-pulse"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-5"></div>
+<div class="w-1 rounded-full bg-primary-container h-3"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-6 animate-pulse"></div>
+<div class="w-1 rounded-full bg-primary-container h-4"></div>
+<div class="w-1 rounded-full bg-tertiary-container h-2"></div>
+</div>
+<!-- Progress Scrub Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="relative w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden cursor-pointer" onclick="scrubTimeline(event)">
+<div class="absolute top-0 left-0 h-full bg-tertiary-container rounded-full" id="audio-progress" style="width: 38%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span id="curr-time">01:24</span>
+<span id="total-time">03:40</span>
+</div>
+</div>
+<!-- Controller Action Buttons -->
+<div class="flex items-center justify-between pt-1">
+<!-- Speed Toggle Button -->
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md" id="btn-speed" onclick="cycleSpeed()">
+          1.0x
+        </button>
+<!-- Main Skip & Play Controls -->
+<div class="flex items-center gap-4">
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="skipSeconds(-10)">
+<span class="material-symbols-outlined text-[24px]">replay_10</span>
+</button>
+<button class="w-13 h-13 px-4 py-3 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-md active:scale-95 transition-all" id="btn-play" onclick="togglePlay()">
+<span class="material-symbols-outlined text-[28px]" id="play-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="skipSeconds(10)">
+<span class="material-symbols-outlined text-[24px]">forward_10</span>
+</button>
+</div>
+<!-- Volume/Mute or Fullscreen Mode -->
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+</div>
+<!-- 3. Key Summary Highlight Card (30-Sec Takeaway) -->
+<div class="flex flex-col gap-2 p-4 rounded-xl bg-secondary-container text-on-secondary-container shadow-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-tertiary-container font-semibold">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+        30초 핵심 요약 키포인트
+      </div>
+<p class="font-body-md text-body-md text-on-secondary-container leading-relaxed">
+        “<strong>근정전(勤政殿)</strong>은 <span class="underline decoration-tertiary decoration-2 underline-offset-4">‘천하의 일을 부지런히 다스려라’</span>라는 뜻을 품고 있습니다. 왕의 즉위식, 과거 시험, 외국 사신 접견 등 나라의 가장 위엄 있고 찬란한 순간들이 펼쳐진 <strong>조선의 심장부</strong>입니다.”
+      </p>
+</div>
+<!-- 4. Magazine Editorial Storytelling Sections -->
+<div class="flex flex-col gap-6">
+<!-- Story Chapter 1: Bakseok Science -->
+<article class="flex flex-col gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">숨겨진 과학</span>
+<span class="font-label-sm text-label-sm text-outline">건축학적 비밀</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">박석(薄石)에 숨은 조상의 하이테크 – 왜 마당 돌은 울퉁불퉁할까?</h3>
+<div class="w-full h-44 rounded-lg overflow-hidden my-1">
+<img class="w-full h-full object-cover" data-alt="Close up detailed shot of the irregular coarse granite pavement stones called Bakseok in Gyeongbokgung courtyard, soft dappled sunlight preventing harsh glare, intricate historical texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpEzyst_LjMn3yowxebPh2M26i-RgAnZ9UGnZRQHIii8xOW9ojTQs01qaa6l_5vdmkfDwKU30EsbYE9gYhIo87Rc06M0V_UUqqRcStot8so8kx3fMRtqh9L8BWCuEA0hZnLHFZgHT4Rtcpx1HMuOofBM4_FN835LqSFSdOQs6kNbW_WOcizlXoJ1FAEAJgm_YEhQK7zt8812cBmuknT2t56NZkTkNOmtVwrDd6JaTJ"/>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          근정전 앞마당에 깔린 널찍하고 거친 돌, ‘박석’을 자세히 본 적이 있나요? 반듯하게 다듬지 않고 일부러 울퉁불퉁하게 둔 데에는 치밀한 과학적 지혜가 숨어 있습니다.
+        </p>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-low gap-1">
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">wb_sunny</span>
+              눈부심 난반사 방지
+            </div>
+<span class="font-label-sm text-label-sm text-outline">강렬한 햇빛을 불규칙하게 흩뿌려 왕과 신하들의 시야를 보호</span>
+</div>
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-low gap-1">
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">do_not_step</span>
+              가죽신 미끄럼 방지
+            </div>
+<span class="font-label-sm text-label-sm text-outline">비가 올 때도 밑창이 가죽인 신하들이 위엄 있게 미끄러지지 않도록 설계</span>
+</div>
+</div>
+</article>
+<!-- Archive Comparison: Past vs Present (Interactive Visual) -->
+<article class="flex flex-col gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">역사 아카이브</span>
+<span class="font-label-sm text-label-sm text-outline">1900년대 초 vs 2025년 현재</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">근정전의 백 년 시간여행</h3>
+<!-- Interactive Comparison Component -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden select-none bg-surface-container-high" id="compare-box">
+<!-- Present Layer (Underneath) -->
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover" data-alt="Vibrant modern restored Geunjeongjeon palace in 2025 with majestic colorful Dancheong painting, blue clear sky, lively visitors walking peacefully in traditional Hanbok" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgPGXb94G8jvV4e3bvYU82V8s1SmDVsFmu2afYzumYuxIE8PbVUG08x9gSZMY-cQpCTWXaxDOrwf8REs53w3ZW3X5sGhn9yTnthcL0_gz0c3nnIKTDR9ran9BVStodQV4Pew2tuIaxvyLZciq6itWqgwf7LvCPxv1EPUMHfyCH5iKGIMAGLbGCKdIicQ2Jt-izAriPTlgt4mddMGbBjsw9P-SZFgsIawkv6fecEOd2"/>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-primary-container/80 text-on-primary font-label-sm text-label-sm backdrop-blur-sm">현재 복원 전경</span>
+</div>
+<!-- Historical Layer (Clipped Overlay) -->
+<div class="absolute inset-0 w-1/2 overflow-hidden shadow-r" id="compare-overlay">
+<div class="w-full h-full min-w-full">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Vintage archival monochrome glass plate photograph of Geunjeongjeon in early 1900s during Korean Empire, weathered antique sepia and black and white architectural tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZXMzHc2ASHrIIVeNtHkgoYRw2RtiS3gRbmC8aVDZNs-_MIAgXsHQzxCAUptv5kfQkvYMfffQMLtalZEMGpQqUr7uyUYsQjH888pONYELBAzcyX_IL4Yzg54pPnRZAXnuZVUBcl5YWAkSDVowxRmY4MYz53Xply6io1A-JJ-jlwCqBmvujQ8RgMuqvMFzVjyS4APd_QmfT5f4TqOHrnhzAl2Eopd78c0yZO7v3fotl"/>
+</div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-sm">1900년대 유리건판</span>
+</div>
+<!-- Divider Handle -->
+<div class="absolute top-0 bottom-0 left-1/2 w-0.5 bg-surface-bright flex items-center justify-center transform -translate-x-1/2 cursor-ew-resize" id="compare-handle">
+<div class="w-6 h-6 rounded-full bg-surface-bright text-primary-container shadow-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">code</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          일제강점기 조선총독부 건물에 가려져 훼손되었던 아픈 역사를 딛고, 원형 그대로 당당하게 제자리를 지키고 있는 근정전의 어제와 오늘입니다.
+        </p>
+</article>
+<!-- Point 3 Checklist: Must-See Elements -->
+<article class="flex flex-col gap-3.5 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          놓치면 후회하는 관람 포인트 3선
+        </div>
+<div class="flex flex-col gap-3">
+<!-- Point 1 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md shrink-0">1</span>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">천장 속 황금 칠조룡(七爪龍)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">정면 어좌 위 높은 닫집 천장에는 일곱 개의 발톱을 가진 두 마리의 황금빛 용 조각이 숨어 있어 자주국가의 위엄을 드러냅니다.</p>
+</div>
+</div>
+<!-- Point 2 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md shrink-0">2</span>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">월대 난간의 십이지신상 & 해치</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">2단 월대 둘레를 사신(四神)과 12간지 동물 석수가 빈틈없이 둘러싸 사방의 액운을 물리치는 수호 결계를 이룹니다.</p>
+</div>
+</div>
+<!-- Point 3 -->
+<div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md shrink-0">3</span>
+<div class="flex flex-col gap-0.5">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">문무백관의 계급장, 품계석(品階石)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">마당 양옆으로 정1품부터 종9품까지 도열한 비석은 조선 관료제의 질서와 국정 조회의 엄격함을 생생히 증언합니다.</p>
+</div>
+</div>
+</div>
+<!-- Official Certification Seal -->
+<div class="flex items-center gap-2.5 pt-3 mt-1 bg-surface-container-highest/40 p-2.5 rounded-lg">
+<span class="material-symbols-outlined text-[20px] text-secondary">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">문화재청 국가문화유산포털 공인 감수</span>
+<span class="font-label-sm text-label-sm text-outline">역사 고증 검증 완료 · StoryTour AI 큐레이션 엔진</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Bottom Floating AI Docent Action Bar -->
+<div class="fixed bottom-4 left-margin right-margin z-40 max-w-md mx-auto">
+<button class="w-full flex items-center justify-between px-4 py-3.5 rounded-full bg-primary-container text-on-primary shadow-xl hover:shadow-2xl transition-all active:scale-[0.98]" onclick="triggerAIChat()">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold text-surface-bright">궁금한 점 실시간 질문하기</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">“왜 왕의 의자는 붉은색인가요?”</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  let isPlaying = true;
+  let speeds = ['1.0x', '1.2x', '0.8x'];
+  let currentSpeedIdx = 0;
+  let isBookmarked = false;
+
+  function togglePlay() {
+    isPlaying = !isPlaying;
+    const playIcon = document.getElementById('play-icon');
+    if (isPlaying) {
+      playIcon.textContent = 'pause';
+    } else {
+      playIcon.textContent = 'play_arrow';
+    }
+  }
+
+  function cycleSpeed() {
+    currentSpeedIdx = (currentSpeedIdx + 1) % speeds.length;
+    document.getElementById('btn-speed').textContent = speeds[currentSpeedIdx];
+  }
+
+  function toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    const icon = document.getElementById('bookmark-icon');
+    if (isBookmarked) {
+      icon.textContent = 'bookmark';
+      icon.style.fontVariationSettings = "'FILL' 1";
+    } else {
+      icon.textContent = 'bookmark_border';
+      icon.style.fontVariationSettings = "'FILL' 0";
+    }
+  }
+
+  function skipSeconds(seconds) {
+    const currTimeElem = document.getElementById('curr-time');
+    const progressBar = document.getElementById('audio-progress');
+    let [m, s] = currTimeElem.textContent.split(':').map(Number);
+    let totalSec = m * 60 + s + seconds;
+    if (totalSec < 0) totalSec = 0;
+    if (totalSec > 220) totalSec = 220; // 3m 40s
+    let newM = Math.floor(totalSec / 60);
+    let newS = totalSec % 60;
+    currTimeElem.textContent = `${String(newM).padStart(2, '0')}:${String(newS).padStart(2, '0')}`;
+    progressBar.style.width = `${(totalSec / 220) * 100}%`;
+  }
+
+  function scrubTimeline(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    document.getElementById('audio-progress').style.width = `${percent * 100}%`;
+    let totalSec = Math.floor(percent * 220);
+    let m = Math.floor(totalSec / 60);
+    let s = totalSec % 60;
+    document.getElementById('curr-time').textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+
+  function selectAudience(button) {
+    document.querySelectorAll('.aud-pill').forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm', 'active-aud');
+      b.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+    });
+    button.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+    button.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm', 'active-aud');
+  }
+
+  function selectDuration(button, timeStr, label) {
+    document.querySelectorAll('.dur-tab').forEach(b => {
+      b.classList.remove('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm', 'font-semibold');
+      b.classList.add('text-on-surface-variant');
+    });
+    button.classList.remove('text-on-surface-variant');
+    button.classList.add('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm', 'font-semibold');
+    document.getElementById('total-time').textContent = timeStr;
+  }
+
+  function triggerAIChat() {
+    alert("AI 도슨트 '수아'와의 대화창으로 연결됩니다.");
+  }
+
+  // Interactive slider logic for archive photo comparison
+  const compareBox = document.getElementById('compare-box');
+  const compareOverlay = document.getElementById('compare-overlay');
+  const compareHandle = document.getElementById('compare-handle');
+
+  if (compareBox) {
+    let isDragging = false;
+    const onMove = (e) => {
+      if (!isDragging) return;
+      const rect = compareBox.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      let pos = (clientX - rect.left) / rect.width;
+      pos = Math.max(0.1, Math.min(0.9, pos));
+      compareOverlay.style.width = `${pos * 100}%`;
+      compareHandle.style.left = `${pos * 100}%`;
+    };
+    compareBox.addEventListener('mousedown', () => isDragging = true);
+    compareBox.addEventListener('touchstart', () => isDragging = true, { passive: true });
+    window.addEventListener('mouseup', () => isDragging = false);
+    window.addEventListener('touchend', () => isDragging = false);
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('touchmove', onMove, { passive: true });
+  }
+</script></main></body></html>

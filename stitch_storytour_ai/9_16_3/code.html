@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fbf9f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#bbc7db", "on-tertiary-container": "#4f3e00", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "on-primary-fixed": "#101c2a", "background": "#fbf9f6", "outline": "#75777c", "primary": "#000000", "on-tertiary-fixed-variant": "#574500", "on-surface": "#1b1c1a", "on-primary": "#ffffff", "primary-fixed": "#d7e3f7", "on-tertiary-fixed": "#241a00", "inverse-surface": "#30312f", "on-primary-container": "#798596", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf9f6", "tertiary-fixed": "#ffe088", "secondary-fixed": "#ece2cc", "secondary-container": "#e9dfc9", "on-error": "#ffffff", "secondary": "#655e4d", "surface-container-high": "#eae8e5", "inverse-on-surface": "#f2f0ed", "outline-variant": "#c5c6cc", "on-error-container": "#93000a", "inverse-primary": "#bbc7db", "on-primary-fixed-variant": "#3c4857", "tertiary": "#735c00", "on-surface-variant": "#44474c", "on-background": "#1b1c1a", "surface-tint": "#535f70", "surface": "#fbf9f6", "error-container": "#ffdad6", "tertiary-fixed-dim": "#e9c349", "on-secondary-fixed-variant": "#4c4636", "surface-container-low": "#f5f3f0", "on-secondary-fixed": "#201b0e", "primary-container": "#101c2a", "secondary-fixed-dim": "#cfc6b0", "surface-dim": "#dbdad7", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#efeeeb", "surface-variant": "#e4e2df", "on-secondary-container": "#696251", "tertiary-container": "#cca730" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1.25rem", "space-md": "1rem" }, fontFamily: { "label-sm": ["Manrope"], "label-md": ["Manrope"], "headline-lg-mobile": ["Noto Serif"], "body-lg": ["Manrope"], "display-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "headline-sm": ["Noto Serif"], "title-md": ["Manrope"], "body-md": ["Manrope"], "display-lg": ["Noto Serif"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="뒤로가기" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-primary-container truncate max-w-[210px]">헤리티지 디지털 완주 인증서 상세</h1></div><div class="flex items-center gap-space-xs"><button aria-label="공유하기" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="닫기" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">close</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Top Preview & Guideline Header -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+          9:16 Story Format
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">순성 완주 인증 카드</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+<span>공식 발급본</span>
+</div>
+</div>
+</section>
+<!-- Main 9:16 Visual Card Container -->
+<section class="px-margin mt-2 flex flex-col items-center">
+<div class="relative w-full aspect-[9/16] max-w-[380px] rounded-xl overflow-hidden shadow-xl flex flex-col justify-between p-5 text-on-primary-fixed bg-surface-container-low transition-all duration-500" id="story-card-canvas">
+<!-- Ambient Visual Background Layers -->
+<div class="absolute inset-0 bg-cover bg-center transition-all duration-700 opacity-90 scale-100" data-alt="Panoramic poetic view of Seoul Baegak and Naksan fortress wall trails under an ethereal golden hour sunset transitioning into quiet indigo moonlit dusk. Handcrafted antique Hanji mulberry paper texture layered with subtle traditional calligraphy ink splashes, warm gilded stone ramparts winding across mountain ridges, historical elegance, high contrast warm beige and charcoal ink tones." id="bg-visual-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlKYc_RPJrZIcaY3UcuwNbqHZwEd9vNFLEpu0dHgQw5KEs917DMg0Qecv28lLGFSzVFlCFo5PjSqZF82Pes7LM5ZyLvC4gcwFDwEyvRnr0ren2wcUxs0ihrMd8eqnAzdDubT5P59K3xlu_xyvPqZoLuj4t_NTr8t_bueEDbQ4rMxCPqJJYl0Ro8zcUMybIyCIat6SHprfSBiQnJtDVLyXBwwPLEy7CROKk3Zt04fD0')"></div>
+<!-- Mood Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#fbf9f6]/95 via-[#f5f3f0]/85 to-[#eae8e5]/95 transition-colors duration-500 pointer-events-none" id="mood-scrim"></div>
+<!-- Traditional Korean Calligraphic Watermark Decoration -->
+<div class="absolute right-3 top-24 pointer-events-none opacity-10 select-none">
+<span class="font-headline-lg text-headline-lg tracking-widest writing-vertical text-on-surface">漢陽都城巡城完走</span>
+</div>
+<!-- CARD TOP: Official Header & Identity -->
+<div class="relative z-10 flex flex-col">
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-tertiary">STORYTOUR ARCHIVE</span>
+<span class="font-label-md text-label-md tracking-wider text-on-surface">OFFICIAL HERITAGE MASTER 2025</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</div>
+</div>
+<div class="pt-2 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm mb-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>완주 공인 증서 · 完走公認</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container font-semibold tracking-tight">
+            한양도성 순성 마스터
+          </h2>
+<p class="font-label-sm text-label-sm text-secondary tracking-widest mt-0.5">
+            漢陽都城 巡城 完走
+          </p>
+<!-- Master Explorer Profile Pill -->
+<div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-sm">
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[10px]">
+              김
+            </div>
+<span class="font-title-md text-[13px] text-primary-container tracking-wide font-medium">
+              탐험가 김지은 <span class="font-label-sm text-secondary font-normal ml-0.5">KIM JI EUN</span>
+</span>
+<span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+</div>
+<!-- CARD CENTER: 4 Fortress Trail Stamp Seals -->
+<div class="relative z-10 my-auto py-2">
+<div class="text-center mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">4대 성곽 구간 완주 각인 도장</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Seal 01: Baegak -->
+<div class="group relative p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center text-center">
+<div class="w-11 h-11 rounded-lg bg-[#b42318]/10 flex flex-col items-center justify-center p-1 relative mb-1.5">
+<span class="material-symbols-outlined text-[#b42318] text-[20px]">filter_hdr</span>
+<span class="font-label-sm text-[8px] font-bold text-[#b42318] tracking-tighter leading-none mt-0.5">백악각인</span>
+<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#b42318] text-white flex items-center justify-center text-[9px] font-bold">✓</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">01. 백악 구간</span>
+<span class="font-label-sm text-[10px] text-secondary mt-0.5">창의문 ↔ 혜화문</span>
+</div>
+<!-- Seal 02: Naksan -->
+<div class="group relative p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center text-center">
+<div class="w-11 h-11 rounded-lg bg-[#b42318]/10 flex flex-col items-center justify-center p-1 relative mb-1.5">
+<span class="material-symbols-outlined text-[#b42318] text-[20px]">nights_stay</span>
+<span class="font-label-sm text-[8px] font-bold text-[#b42318] tracking-tighter leading-none mt-0.5">낙산야경</span>
+<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#b42318] text-white flex items-center justify-center text-[9px] font-bold">✓</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">02. 낙산 구간</span>
+<span class="font-label-sm text-[10px] text-secondary mt-0.5">혜화문 ↔ 흥인지문</span>
+</div>
+<!-- Seal 03: Mokmyeok / Namsan -->
+<div class="group relative p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center text-center">
+<div class="w-11 h-11 rounded-lg bg-[#b42318]/10 flex flex-col items-center justify-center p-1 relative mb-1.5">
+<span class="material-symbols-outlined text-[#b42318] text-[20px]">terrain</span>
+<span class="font-label-sm text-[8px] font-bold text-[#b42318] tracking-tighter leading-none mt-0.5">목멱남산</span>
+<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#b42318] text-white flex items-center justify-center text-[9px] font-bold">✓</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">03. 목멱·남산 구간</span>
+<span class="font-label-sm text-[10px] text-secondary mt-0.5">흥인지문 ↔ 숭례문</span>
+</div>
+<!-- Seal 04: Inwang -->
+<div class="group relative p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center text-center">
+<div class="w-11 h-11 rounded-lg bg-[#b42318]/10 flex flex-col items-center justify-center p-1 relative mb-1.5">
+<span class="material-symbols-outlined text-[#b42318] text-[20px]">fort</span>
+<span class="font-label-sm text-[8px] font-bold text-[#b42318] tracking-tighter leading-none mt-0.5">인왕치성</span>
+<div class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#b42318] text-white flex items-center justify-center text-[9px] font-bold">✓</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">04. 인왕 구간</span>
+<span class="font-label-sm text-[10px] text-secondary mt-0.5">숭례문 ↔ 창의문</span>
+</div>
+</div>
+</div>
+<!-- CARD BOTTOM: Metrics & Certificate Credentials -->
+<div class="relative z-10 flex flex-col gap-2.5">
+<!-- Metric Grid Pill -->
+<div class="grid grid-cols-4 gap-1 p-2 rounded-lg bg-surface-container-lowest/90 backdrop-blur-sm shadow-sm text-center">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-secondary">순성 거리</span>
+<span class="font-title-md text-[14px] text-primary-container font-bold">18.6<span class="text-[10px] font-normal text-secondary ml-0.5">km</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-secondary">누적 고도</span>
+<span class="font-title-md text-[14px] text-primary-container font-bold">+724<span class="text-[10px] font-normal text-secondary ml-0.5">m</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-secondary">완주 시간</span>
+<span class="font-title-md text-[14px] text-primary-container font-bold">6h 42m</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-secondary">도슨트 완청</span>
+<span class="font-title-md text-[14px] text-tertiary font-bold">18/18</span>
+</div>
+</div>
+<!-- Poetic Quotation Box -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 backdrop-blur-sm text-center">
+<p class="font-headline-sm text-[11px] leading-[17px] text-on-surface italic">
+            "조선의 사대문과 사소문을 잇는 600년 성곽길을 따라 걸으며, 한양의 숨결과 역사를 온전히 가슴에 새기다."
+          </p>
+</div>
+<!-- Official Security Hash & Heritage Authority -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-[9px] tracking-tight">
+<span class="material-symbols-outlined text-[12px] text-tertiary">fingerprint</span>
+<span>CHA-HD-2025-09148</span>
+</div>
+<span class="font-label-sm text-[9px] text-secondary">
+            서울특별시 한양도성도감 &amp; 국가유산청
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Mood Theme Switcher Section -->
+<section class="px-margin mt-6 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">스토리 비주얼 무드 선택</span>
+<span class="font-label-sm text-label-sm text-secondary">실시간 프리뷰 변경</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Theme 1: Moonlit Indigo -->
+<button class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all active:scale-95 shadow-sm" id="theme-btn-moonlit" onclick="switchCardTheme('moonlit')" type="button">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">nightlight</span>
+</div>
+<span class="font-label-sm text-label-sm">심야 성곽 달빛</span>
+</button>
+<!-- Theme 2: Antique Hanji (Default Active) -->
+<button class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-highest text-on-surface transition-all active:scale-95 shadow-md" id="theme-btn-hanji" onclick="switchCardTheme('hanji')" type="button">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold">앤틱 한지 (선택됨)</span>
+</button>
+<!-- Theme 3: Sunset Gold -->
+<button class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all active:scale-95 shadow-sm" id="theme-btn-sunset" onclick="switchCardTheme('sunset')" type="button">
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">wb_twilight</span>
+</div>
+<span class="font-label-sm text-label-sm">선셋 골드</span>
+</button>
+</div>
+</section>
+<!-- Interactive Action Buttons -->
+<section class="px-margin mt-5 flex flex-col gap-2.5">
+<!-- Primary CTA: Instagram Story Share -->
+<button class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#e1306c] via-[#fd1d1d] to-[#f77737] text-white flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] transition-all" onclick="triggerInstagramShare()" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+<span class="font-title-md text-[15px] font-semibold tracking-wide">인스타그램 스토리에 바로 공유하기</span>
+</button>
+<!-- Secondary CTA: High-Res 9:16 Save -->
+<button class="w-full py-3 px-4 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high flex items-center justify-center gap-2 active:scale-[0.98] transition-all" onclick="triggerSaveImage()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="font-label-md text-label-md font-medium">고해상도 9:16 이미지 저장</span>
+</button>
+</section>
+<!-- Delight Micro-Interaction Toast Feedback -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-primary-container text-on-primary shadow-xl font-label-md text-label-md opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-1.5" id="action-toast">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span id="toast-message">스토리 카드가 생성되었습니다.</span>
+</div>
+</div>
+<script>
+  function switchCardTheme(theme) {
+    const card = document.getElementById('story-card-canvas');
+    const scrim = document.getElementById('mood-scrim');
+    const btnHanji = document.getElementById('theme-btn-hanji');
+    const btnMoonlit = document.getElementById('theme-btn-moonlit');
+    const btnSunset = document.getElementById('theme-btn-sunset');
+
+    // Reset button styles
+    [btnHanji, btnMoonlit, btnSunset].forEach(btn => {
+      btn.className = "flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all active:scale-95 shadow-sm";
+    });
+
+    if (theme === 'moonlit') {
+      scrim.className = "absolute inset-0 bg-gradient-to-b from-[#101c2a]/90 via-[#1b2838]/80 to-[#101c2a]/95 transition-colors duration-500 pointer-events-none";
+      card.className = "relative w-full aspect-[9/16] max-w-[380px] rounded-xl overflow-hidden shadow-2xl flex flex-col justify-between p-5 text-on-primary bg-primary-container transition-all duration-500";
+      btnMoonlit.className = "flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-highest text-on-surface transition-all active:scale-95 shadow-md";
+      btnMoonlit.querySelector('span:last-child').textContent = "심야 성곽 달빛 (선택됨)";
+      btnHanji.querySelector('span:last-child').textContent = "앤틱 한지";
+      btnSunset.querySelector('span:last-child').textContent = "선셋 골드";
+      showToast("심야 성곽 달빛 테마가 적용되었습니다.");
+    } else if (theme === 'sunset') {
+      scrim.className = "absolute inset-0 bg-gradient-to-b from-[#cca730]/40 via-[#fbf9f6]/70 to-[#e9dfc9]/90 transition-colors duration-500 pointer-events-none";
+      card.className = "relative w-full aspect-[9/16] max-w-[380px] rounded-xl overflow-hidden shadow-xl flex flex-col justify-between p-5 text-on-primary-fixed bg-surface-container-low transition-all duration-500";
+      btnSunset.className = "flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-highest text-on-surface transition-all active:scale-95 shadow-md";
+      btnSunset.querySelector('span:last-child').textContent = "선셋 골드 (선택됨)";
+      btnHanji.querySelector('span:last-child').textContent = "앤틱 한지";
+      btnMoonlit.querySelector('span:last-child').textContent = "심야 성곽 달빛";
+      showToast("선셋 골드 테마가 적용되었습니다.");
+    } else {
+      // Default Hanji
+      scrim.className = "absolute inset-0 bg-gradient-to-b from-[#fbf9f6]/95 via-[#f5f3f0]/85 to-[#eae8e5]/95 transition-colors duration-500 pointer-events-none";
+      card.className = "relative w-full aspect-[9/16] max-w-[380px] rounded-xl overflow-hidden shadow-xl flex flex-col justify-between p-5 text-on-primary-fixed bg-surface-container-low transition-all duration-500";
+      btnHanji.className = "flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-highest text-on-surface transition-all active:scale-95 shadow-md";
+      btnHanji.querySelector('span:last-child').textContent = "앤틱 한지 (선택됨)";
+      btnMoonlit.querySelector('span:last-child').textContent = "심야 성곽 달빛";
+      btnSunset.querySelector('span:last-child').textContent = "선셋 골드";
+      showToast("앤틱 한지 테마가 적용되었습니다.");
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('action-toast');
+    const msg = document.getElementById('toast-message');
+    msg.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2400);
+  }
+
+  function triggerInstagramShare() {
+    showToast("인스타그램 스토리 규격(9:16) 클립보드 복사 완료!");
+  }
+
+  function triggerSaveImage() {
+    showToast("300DPI 인쇄 품질 9:16 이미지를 다운로드합니다.");
+  }
+</script></main></body></html>

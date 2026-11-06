@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fbf9f6;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#bbc7db", "on-tertiary-container": "#4f3e00", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "on-primary-fixed": "#101c2a", "background": "#fbf9f6", "outline": "#75777c", "primary": "#000000", "on-tertiary-fixed-variant": "#574500", "on-surface": "#1b1c1a", "on-primary": "#ffffff", "primary-fixed": "#d7e3f7", "on-tertiary-fixed": "#241a00", "inverse-surface": "#30312f", "on-primary-container": "#798596", "surface-container-lowest": "#ffffff", "surface-bright": "#fbf9f6", "tertiary-fixed": "#ffe088", "secondary-fixed": "#ece2cc", "secondary-container": "#e9dfc9", "on-error": "#ffffff", "secondary": "#655e4d", "surface-container-high": "#eae8e5", "inverse-on-surface": "#f2f0ed", "outline-variant": "#c5c6cc", "on-error-container": "#93000a", "inverse-primary": "#bbc7db", "on-primary-fixed-variant": "#3c4857", "tertiary": "#735c00", "on-surface-variant": "#44474c", "on-background": "#1b1c1a", "surface-tint": "#535f70", "surface": "#fbf9f6", "error-container": "#ffdad6", "tertiary-fixed-dim": "#e9c349", "on-secondary-fixed-variant": "#4c4636", "surface-container-low": "#f5f3f0", "on-secondary-fixed": "#201b0e", "primary-container": "#101c2a", "secondary-fixed-dim": "#cfc6b0", "surface-dim": "#dbdad7", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#efeeeb", "surface-variant": "#e4e2df", "on-secondary-container": "#696251", "tertiary-container": "#cca730" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1.25rem", "space-md": "1rem" }, fontFamily: { "label-sm": ["Manrope"], "label-md": ["Manrope"], "headline-lg-mobile": ["Noto Serif"], "body-lg": ["Manrope"], "display-lg-mobile": ["Noto Serif"], "headline-lg": ["Noto Serif"], "headline-sm": ["Noto Serif"], "title-md": ["Manrope"], "body-md": ["Manrope"], "display-lg": ["Noto Serif"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "28px", "fontWeight": "400" }], "display-lg-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="StoryTour AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI5vlm8DM1nX_TGrQw49u9O0ctRGkmoDbsjNC08yvYwHYfbguzxjBFMQphcGOpEXfDAQST_Qf5uoO182DeKkQ6LMz0HzUyHnyA9ZnztFer_C5Ltbg9PtsctQQoShn3OBSglxIVLAEmfoUAguOLDED5pJo7BbxgAd10lOvIHAegoxNb2_67UMG30PkjgRttCm6shvFC3hPk9Yp1EqAF5qO7BdQ5fAXeC8CmrsCYdtto"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-none tracking-tight">StoryTour AI</span><span class="font-label-sm text-label-sm text-secondary hidden">Ai Docent Chat</span></div></div><div class="flex items-center gap-space-xs"><button class="min-w-[44px] h-11 px-space-xs rounded-full flex items-center justify-center gap-1 bg-surface-container hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[16px] text-secondary">language</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">KR</span></button><button class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 rounded-full flex items-center justify-center" data-path="멤버십-&amp;-플랜" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-tertiary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrxttk_LDqNX4S883MLXzNrak2d_h7E0k9T4TniaHn2c2awcYaCMnc2yee5AdWgq0WaPwCuCW4Bw3Xy5ZCJopPC5OetldvWGQj34Ya9lUJ0A2cxbfqGWKY3M-EYnzj72TNR15myMaGbCZ_U1dunE0aJhNyuTbflmJ-ofYbWLj4VoXGldhqKxnrFNC83t9YnOOvASj4xsmRzpL6TurBHT1kt3HudmHtpOlxDMUxRi-f"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Top Search & Quick Category Filtering Area -->
+<section class="sticky top-0 z-30 px-margin pt-space-sm pb-space-sm bg-surface/90 backdrop-blur-md">
+<!-- Floating Heritage Search Input -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full px-space-md py-2.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[22px]">search</span>
+<input class="bg-transparent flex-1 text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none min-w-0" placeholder="서울 종로구, 경주, 부여 유적지 탐색" type="text" value="서울 종로구 궁궐 유적지"/>
+<button aria-label="음성 검색" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="필터 설정" class="w-8 h-8 rounded-full flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Quick Category Scrolling Chips -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pt-3 pb-1 -mx-margin px-margin">
+<button class="shrink-0 px-3.5 py-1.5 rounded-full bg-primary-container text-surface font-label-md text-label-md font-semibold shadow-sm flex items-center gap-1.5 transition-transform active:scale-95">
+<span>전체</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-secondary-container transition-colors flex items-center gap-1.5">
+<span>🏰 궁궐·종묘</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span>🏛️ 국립박물관</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span>📜 유네스코 세계유산</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span>⛰️ 사찰·자연</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span>☕ 문화거리 코스</span>
+</button>
+</div>
+</section>
+<!-- Interactive Map Canvas Container (Seoul Jongno Area) -->
+<section class="relative w-full h-[410px] overflow-hidden bg-surface-container">
+<!-- Static Map Integration Layer with High-Contrast Cultural Stylization -->
+<div class="w-full h-full bg-cover bg-center brightness-[0.98] contrast-[1.03]" data-location="Gyeongbokgung Palace, Jongno-gu, Seoul, South Korea" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0Q79OkKkF68UnBVqi207To2s9woMeyFUpjTqEbMqFD2rXcw8ctwdwUTBRyP1Powu5XvAM7iing8I7FZwqwygQVpqa86I_L1YQuczrJwOPw-9nPmwGIRH8laXvRIK34xcQGUNiAOhtk8ilP5e_ea5rnMEGXYKMUtpM9SR54PmHE10GZGqBwN7IOjBsO61UkapmvxOrxeQdsIfSYHtvS3uSRaxBtwYFEBHTlE3MwORH')"></div>
+<!-- Soft Vignette Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent pointer-events-none opacity-60"></div>
+<!-- Custom Heritage Pin 1: Gyeongbokgung (Active Highlighted Pin) -->
+<div class="absolute top-[28%] left-[26%] -translate-x-1/2 -translate-y-full flex flex-col items-center z-20 group cursor-pointer">
+<div class="flex items-center gap-1.5 bg-primary-container text-on-primary px-3 py-1.5 rounded-full shadow-xl animate-bounce">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span class="font-title-md text-[13px] font-bold tracking-tight">경복궁</span>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">headphones</span>
+          1,842명
+        </span>
+</div>
+<div class="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-primary-container"></div>
+<div class="w-3 h-1.5 rounded-full bg-primary-container/30 blur-[1px] mt-0.5"></div>
+</div>
+<!-- Custom Heritage Pin 2: Changdeokgung Rear Garden -->
+<div class="absolute top-[22%] right-[18%] -translate-x-1/2 -translate-y-full flex flex-col items-center z-10 cursor-pointer">
+<div class="flex items-center gap-1 bg-surface-container-lowest/95 backdrop-blur-md text-on-surface px-2.5 py-1 rounded-full shadow-md hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[14px]">nature_people</span>
+<span class="font-label-md text-label-md font-semibold">창덕궁 후원 (비원)</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-tertiary shadow-sm mt-0.5"></div>
+</div>
+<!-- Custom Heritage Pin 3: National Palace Museum -->
+<div class="absolute bottom-[36%] left-[22%] -translate-x-1/2 -translate-y-full flex flex-col items-center z-10 cursor-pointer">
+<div class="flex items-center gap-1 bg-surface-container-lowest/95 backdrop-blur-md text-on-surface px-2.5 py-1 rounded-full shadow-md hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-secondary text-[14px]">account_balance</span>
+<span class="font-label-md text-label-md font-semibold">국립고궁박물관</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-secondary shadow-sm mt-0.5"></div>
+</div>
+<!-- Custom Heritage Pin 4: Bukchon Hanok Village -->
+<div class="absolute top-[16%] left-[54%] -translate-x-1/2 -translate-y-full flex flex-col items-center z-10 cursor-pointer">
+<div class="flex items-center gap-1 bg-surface-container-lowest/95 backdrop-blur-md text-on-surface px-2.5 py-1 rounded-full shadow-md hover:bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-secondary text-[14px]">holiday_village</span>
+<span class="font-label-md text-label-md font-semibold">북촌한옥마을</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-secondary shadow-sm mt-0.5"></div>
+</div>
+<!-- SVG Walking Route Trail Connection (Pedestrian Path Preview) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
+<path d="M 100 270 Q 140 220, 110 135 T 210 90 T 300 110" fill="none" opacity="0.85" stroke="#cca730" stroke-dasharray="6,6" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<!-- Floating Map Quick Actions (Top Right & Bottom Float) -->
+<div class="absolute top-3 right-margin flex flex-col gap-2 z-20">
+<button aria-label="현재 내 위치 확인" class="w-10 h-10 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-md flex items-center justify-center hover:bg-surface-container-high transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[20px] text-tertiary">my_location</span>
+</button>
+<button aria-label="지하철 및 편의시설" class="w-10 h-10 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface shadow-md flex items-center justify-center hover:bg-surface-container-high transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[20px] text-secondary">layers</span>
+</button>
+</div>
+<!-- Dynamic Walking Route Badge & AR Entry Pill (Floating Pill Controls) -->
+<div class="absolute bottom-5 inset-x-margin flex items-center justify-between gap-space-xs z-20">
+<div class="flex items-center gap-2 bg-primary-container/90 backdrop-blur-md text-on-primary px-3 py-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">directions_walk</span>
+<span class="font-label-md text-label-md tracking-tight">추천 동선 잇기 (도보 1.8km)</span>
+</div>
+<button class="flex items-center gap-1.5 bg-surface-container-lowest text-on-surface px-3 py-2 rounded-full shadow-lg hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-tertiary text-[18px]">view_in_ar</span>
+<span class="font-label-md text-label-md font-bold">AR 뷰로 보기</span>
+</button>
+</div>
+</section>
+<!-- Sliding Content Sheet / Curated Heritage Courses & Spot Panel -->
+<section class="flex flex-col w-full -mt-3 pt-3 pb-8 px-margin bg-surface rounded-t-[24px] shadow-[0_-8px_24px_rgba(15,27,41,0.06)] z-20">
+<!-- Sheet Drag Handle Indicator -->
+<div class="w-10 h-1 rounded-full bg-outline-variant/60 mx-auto mb-3"></div>
+<!-- Panel Mode Tabs -->
+<div class="flex items-center justify-between p-1 bg-surface-container rounded-xl mb-4">
+<button class="flex-1 py-2 px-3 text-center rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-bold transition-all" id="tab-course-btn">
+        추천 도슨트 코스 <span class="text-tertiary ml-0.5">3</span>
+</button>
+<button class="flex-1 py-2 px-3 text-center rounded-lg text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all" id="tab-spot-btn">
+        주변 문화유산 목록 <span class="text-secondary ml-0.5">24</span>
+</button>
+</div>
+<!-- Featured Curated Course Card -->
+<article class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md shadow-md mb-space-md">
+<!-- Course Header Badges & Title -->
+<div class="flex items-center gap-1.5 flex-wrap mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold tracking-tight">
+          인기 1위
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+          소요시간 2.5h
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">volume_up</span>
+          오디오 8편 수록
+        </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container mb-1 tracking-tight">
+        조선 왕실의 하루: 경복궁 집중 도보 탐방로
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-3.5">
+        왕의 일과와 의례가 시작되던 광화문 월대부터 고요한 밤의 향연이 펼쳐진 경회루까지, 역사학자 AI와 함께 거니는 궁궐 일주 코스입니다.
+      </p>
+<!-- Step-by-Step Route Graphic Preview -->
+<div class="p-3 bg-surface-container-low rounded-xl mb-4">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="font-label-md text-label-md font-bold tracking-tight flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">route</span>
+            주요 해설 동선 (총 4개 포인트)
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">도보 1.8km 완주형</span>
+</div>
+<ol class="flex items-center justify-between text-center relative pt-1 pb-1">
+<!-- Horizontal connector line -->
+<div class="absolute top-[18px] left-[10%] right-[10%] h-[2px] bg-outline-variant/60 -z-0"></div>
+<li class="flex flex-col items-center gap-1 relative z-10 w-1/4">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-sm text-[11px] font-bold flex items-center justify-center shadow-sm">1</span>
+<span class="font-label-sm text-[11px] font-medium text-on-surface leading-tight">광화문&amp;월대</span>
+</li>
+<li class="flex flex-col items-center gap-1 relative z-10 w-1/4">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-bold flex items-center justify-center">2</span>
+<span class="font-label-sm text-[11px] font-medium text-on-surface-variant leading-tight">흥례문</span>
+</li>
+<li class="flex flex-col items-center gap-1 relative z-10 w-1/4">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-bold flex items-center justify-center">3</span>
+<span class="font-label-sm text-[11px] font-medium text-on-surface-variant leading-tight">근정전&amp;박석</span>
+</li>
+<li class="flex flex-col items-center gap-1 relative z-10 w-1/4">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-bold flex items-center justify-center">4</span>
+<span class="font-label-sm text-[11px] font-medium text-on-surface-variant leading-tight">경회루 누각</span>
+</li>
+</ol>
+</div>
+<!-- Action Button: Start Guided Walk -->
+<button class="w-full py-3 px-4 rounded-xl bg-primary-container text-on-primary hover:bg-black transition-all flex items-center justify-center gap-2 shadow-md active:scale-[0.99]">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-title-md text-title-md font-semibold tracking-wide">코스 가이드 시작하기</span>
+</button>
+</article>
+<!-- Section Subheading: Nearby Heritage Spots -->
+<div class="flex items-center justify-between mb-3 px-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+        주변 필수 유적지
+      </h3>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+        현재 반경 1.5km
+        <span class="material-symbols-outlined text-[14px]">arrow_forward_ios</span>
+</span>
+</div>
+<!-- Secondary Spot Card 1: Changdeokgung Injeongjeon -->
+<article class="flex items-center gap-space-sm p-3 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow mb-3">
+<div class="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="창덕궁 인정전" class="w-full h-full object-cover" data-alt="Changdeokgung Palace Injeongjeon National Treasure Hall in Seoul, traditional wooden architecture, serene sunlight, refined editorial documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQqoTlZdOd3_cS4HrQyVjN22P0A022zgUN4odZws_7gkr-ZQvjRXVj-avUkhREguBXInOU1jCDp6OyPbTP-4E_9McqE9cKVfeeuiS-sWXNywrQGCdfFpT32cA7SFdq1etvMehK26MopHTVOoCj129Ls77xj_HrhPYNWlSugZ9rBwBois1wng4xaIeKS3RFjl7CCT04DiyTgHeepcodZxzlBtv_ROgAv6e36RDRXF_"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.2 rounded bg-primary-container/85 text-on-primary font-label-sm text-[9px] font-semibold">
+          국보 제225호
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">도보 15분 거리</span>
+<span class="text-outline-variant text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-tertiary text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.9 (1.2k)
+          </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate">
+          창덕궁 인정전
+        </h4>
+<p class="font-label-md text-label-md text-on-surface-variant truncate mb-1">
+          왕의 즉위식과 외국 사신 접견이 거행된 법전
+        </p>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">headphones</span>
+            950명 청취 중
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">오디오 4편</span>
+</div>
+</div>
+<button aria-label="오디오 미리듣기" class="w-10 h-10 shrink-0 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</article>
+<!-- Secondary Spot Card 2: Jongmyo Jeongjeon -->
+<article class="flex items-center gap-space-sm p-3 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="종묘 정전" class="w-full h-full object-cover" data-alt="Jongmyo Shrine Jeongjeon Seoul UNESCO world heritage monumental timber architecture classical solemn atmospheric photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFrcnQEzaj0uZwBBrzzcj9uT0elyaOYR5v2ic7gJXTODUknj-9ybnW9lK7bVsCIp5bJ_rsx_2A1mBBoxTLi2AlFtbhAGz8kw8wwkYjeolihZWBQCJ3swGT13E6N1kIh1g3sfMIO8zLvAW20hpcoetWt0jVSiXiQdm4fvhCGzWykpPV8M4zWJVnviJ1Xb5VnHaWqfFIxhqXywYPevFiwOPg6Ixk5jlyOS5fUNJoKGwR"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.2 rounded bg-tertiary text-on-tertiary font-label-sm text-[9px] font-semibold">
+          세계유산
+        </span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">차량 7분 거리</span>
+<span class="text-outline-variant text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-tertiary text-[13px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.8 (840)
+          </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate">
+          종묘 정전
+        </h4>
+<p class="font-label-md text-label-md text-on-surface-variant truncate mb-1">
+          동양의 파르테논이라 불리는 숭고한 왕실 제례 공간
+        </p>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">headphones</span>
+            720명 청취 중
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">오디오 6편</span>
+</div>
+</div>
+<button aria-label="오디오 미리듣기" class="w-10 h-10 shrink-0 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</article>
+</section>
+<!-- Interactive Micro-Interactions Script -->
+<script>
+    (function() {
+      const courseBtn = document.getElementById('tab-course-btn');
+      const spotBtn = document.getElementById('tab-spot-btn');
+
+      if (courseBtn && spotBtn) {
+        courseBtn.addEventListener('click', function() {
+          courseBtn.className = 'flex-1 py-2 px-3 text-center rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-bold transition-all';
+          spotBtn.className = 'flex-1 py-2 px-3 text-center rounded-lg text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all';
+        });
+
+        spotBtn.addEventListener('click', function() {
+          spotBtn.className = 'flex-1 py-2 px-3 text-center rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-bold transition-all';
+          courseBtn.className = 'flex-1 py-2 px-3 text-center rounded-lg text-on-surface-variant font-label-md text-label-md font-medium hover:text-on-surface transition-all';
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,27,41,0.05)]" data-active-classes="text-tertiary-container font-semibold"><div class="relative flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="메인-홈-대시보드" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">홈</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-14 transition-colors gap-0.5 text-tertiary-container font-semibold" data-path="여행지-탐색-및-코스" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">탐색</span></a><div class="relative -top-5 flex flex-col items-center justify-center"><a class="w-14 h-14 rounded-full bg-primary-container text-tertiary-fixed shadow-[0_4px_14px_rgba(15,27,41,0.3)] flex items-center justify-center transition-transform active:scale-95" data-path="ai-스토리-해설-및-도슨트" href="#"><span class="material-symbols-outlined text-[28px]">photo_camera</span></a><span class="font-label-sm text-label-sm text-on-surface mt-1">AI 카메라</span></div><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="ai-여행-도슨트-대화" href="#"><span class="material-symbols-outlined text-[24px]">chat_bubble</span><span class="font-label-sm text-label-sm">도슨트 대화</span></a><a class="flex flex-col items-center justify-center w-16 h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="나만의-여행-아카이브" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm">마이 아카이브</span></a></div></nav></body></html>

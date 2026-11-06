@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#e4e2df","surface-container":"#efeeeb","inverse-surface":"#30312f","on-error":"#ffffff","surface-container-high":"#eae8e5","surface-container-lowest":"#ffffff","outline-variant":"#c5c6cc","surface-dim":"#dbdad7","on-tertiary-fixed-variant":"#574500","on-surface-variant":"#44474c","on-secondary-fixed-variant":"#4c4636","on-tertiary":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","inverse-primary":"#bbc7db","secondary-fixed":"#ece2cc","on-primary-fixed-variant":"#3c4857","tertiary-fixed-dim":"#e9c349","on-secondary-fixed":"#201b0e","secondary":"#655e4d","error":"#ba1a1a","primary-fixed":"#d7e3f7","background":"#fbf9f6","tertiary-container":"#cca730","on-primary-container":"#798596","surface-variant":"#e4e2df","on-secondary-container":"#696251","primary-container":"#101c2a","primary-fixed-dim":"#bbc7db","on-error-container":"#93000a","outline":"#75777c","secondary-container":"#e9dfc9","on-surface":"#1b1c1a","on-primary":"#ffffff","primary":"#000000","secondary-fixed-dim":"#cfc6b0","surface-container-low":"#f5f3f0","surface-tint":"#535f70","tertiary":"#735c00","on-tertiary-fixed":"#241a00","on-primary-fixed":"#101c2a","tertiary-fixed":"#ffe088","surface":"#fbf9f6","surface-bright":"#fbf9f6","on-background":"#1b1c1a","on-tertiary-container":"#4f3e00","inverse-on-surface":"#f2f0ed"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2.5rem","margin":"1.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","gutter-desktop":"1.5rem","space-md":"1rem","gutter":"1rem"},fontFamily:{"headline-sm":["Noto Serif"],"headline-lg":["Noto Serif"],"label-md":["Manrope"],"display-lg":["Noto Serif"],"body-lg":["Manrope"],"headline-lg-mobile":["Noto Serif"],"display-lg-mobile":["Noto Serif"],"label-sm":["Manrope"],"title-md":["Manrope"],"body-md":["Manrope"]},fontSize:{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"title-md":["17px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm mb-space-md"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">StoryTour AI</span><span class="font-label-sm text-label-sm text-tertiary tracking-wider uppercase font-semibold">Enterprise Portal</span></div></div><div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">museum</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant">관리 대상 기관</span><span class="font-body-md text-body-md text-on-surface font-semibold truncate max-w-[130px]">국립중앙박물관</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><nav class="flex flex-col px-space-md gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="dashboard-overview" href="#">대시보드 요약</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="docent-content-cms" href="#">AI 해설 콘텐츠 관리</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="qr-and-beacon-manager" href="#">QR 코드 &amp; 비콘 관리</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="qr-docent-mapping-issue" href="#">QR 발급 및 해설 매핑</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="audience-analytics" href="#">관람객 실시간 통계</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="multilingual-engine" href="#">다국어 번역 엔진</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="custom-branding-and-settings" href="#">기관 브랜딩 및 설정</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="enterprise-billing" href="#">구독 및 API 플랜</a></nav></div><div class="p-space-md flex flex-col gap-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">시스템 현황</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-bold"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>가동중 99.98%</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">클라우드 실시간 음성합성 엔진</span></div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="helpdesk" href="#">공공기관 기술지원 데스크</a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="text-secondary">스토리투어 B2B</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">국립중앙박물관 지회</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-72 lg:w-96 pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="전시관, 소장품 ID, 도슨트 스크립트 검색..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[16px] text-tertiary">groups</span><span class="font-label-sm text-label-sm font-semibold">실시간 관람객 청취중:</span><span class="font-label-md text-label-md font-bold text-on-surface">1,428명</span></div><button class="relative w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden lg:flex"><span class="font-title-md text-title-md text-on-surface leading-tight">김선우</span><span class="font-label-sm text-label-sm text-on-surface-variant">학예연구팀장 / 관리자</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg min-h-screen"><div class="flex flex-col w-full relative">
+<div class="w-full pb-16 pointer-events-none select-none opacity-40 filter blur-[1.5px]">
+<div class="flex items-center justify-between py-space-md mb-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Heritage Assets Registry</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">QR 코드 &amp; 비콘 센서 인프라 관리</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md">총 1,842개 노드 정상 가동중</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">활성 QR 플레이트</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1,248 개</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">BLE 비콘 페어링</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">594 개</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">일일 오디오 재생 세션</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">38,912 건</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">다국어 실시간 커버리지</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">94.8 %</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm h-96 flex items-center justify-center">
+<span class="font-body-md text-body-md text-outline">상설전시관 인터랙티브 평면도 데이터 렌더링 중...</span>
+</div>
+</div>
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md md:p-space-lg bg-inverse-surface/60 backdrop-blur-md">
+<div class="relative w-full max-w-6xl max-h-[942px] flex flex-col bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="px-space-xl py-space-lg bg-surface-container-low flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-tertiary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Smart Docent Pipeline</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">B2B 국립중앙박물관 규격</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-0.5">신규 전시물 QR 코드 &amp; 비콘 발급</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">상설전시실 유물 메타데이터 연동 및 다국어 AI 도슨트 오디오 스크립트 즉시 매핑</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="px-space-xl py-space-sm bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-lg w-full max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">1</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">전시물 정보 입력</span>
+</div>
+<div class="h-0.5 flex-1 bg-primary-container"></div>
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-label-sm text-label-sm font-bold shadow-xs">2</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">AI 음성 &amp; 스크립트 설정</span>
+</div>
+<div class="h-0.5 flex-1 bg-outline-variant/60"></div>
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold">3</div>
+<span class="font-body-md text-body-md text-on-surface-variant">인쇄 규격 &amp; QR 디자인</span>
+</div>
+<div class="h-0.5 flex-1 bg-outline-variant/60"></div>
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-bold">4</div>
+<span class="font-body-md text-body-md text-on-surface-variant">발급 완료</span>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>공공유물 데이터베이스 표준 보안 검증됨</span>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-space-xs font-bold">
+<span class="material-symbols-outlined text-tertiary text-[20px]">domain</span>
+                소장품 위치 및 식별 메타데이터
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">필수 입력</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">전시관 / 전시실 구역 선택</label>
+<div class="relative">
+<select class="w-full appearance-none px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none cursor-pointer" id="zoneSelect">
+<option value="사유의 방 (반가사유상 특별실)">상설전시관 2층 &gt; 사유의 방 (Room of Quiet)</option>
+<option value="도자공예실 (조선백자실)">상설전시관 3층 &gt; 도자공예실 (조선백자실)</option>
+<option value="서화실 (조선 회화 명품관)">상설전시관 2층 &gt; 서화실 (조선 회화 명품관)</option>
+<option value="금속공예실 (고려 불교 유물)">상설전시관 3층 &gt; 금속공예실</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">소장품 고유 관리번호 (UID)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" id="uidInput" type="text" value="NMK-CERAMIC-2025-09"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="md:col-span-2 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">유물 명칭 (한글/영문 공용)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" id="artifactNameInput" type="text" value="국보 백자 청화매죽문 항아리"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">시대 / 분류 태그</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="조선 15세기 · 도자기"/>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-space-xs font-bold">
+<span class="material-symbols-outlined text-tertiary text-[20px]">graphic_eq</span>
+                AI 도슨트 음성 엔진 &amp; 해설 모드 프리셋
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary bg-secondary-container px-space-xs py-0.5 rounded font-semibold">StoryTour AI v4.2 적용</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<label class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">성인 교양 모드</span>
+<input checked="" class="accent-primary" name="docentMode" type="radio" value="adult"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">역사적 맥락과 미학적 해설 중심 (소요시간 3분 내외)</span>
+<span class="mt-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-xs py-0.5 rounded w-fit">기본 권장</span>
+</label>
+<label class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">어린이 눈높이</span>
+<input class="accent-primary" name="docentMode" type="radio" value="kids"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">호기심 자극 질문형 서사와 대화형 스크립트 구성</span>
+<span class="mt-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-xs py-0.5 rounded w-fit">초등 교과연계</span>
+</label>
+<label class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs cursor-pointer hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">전문 역사 심화</span>
+<input class="accent-primary" name="docentMode" type="radio" value="academic"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">제작 기법, 발굴 경위 및 미술사학적 비교 고증</span>
+<span class="mt-space-xs font-label-sm text-label-sm text-secondary bg-surface-container px-space-xs py-0.5 rounded w-fit">연구/전공자용</span>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">오디오 성우 톤 &amp; 음색</label>
+<div class="relative">
+<select class="w-full appearance-none px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none cursor-pointer">
+<option selected="">차분하고 기품 있는 학예사 톤 (단아한 여성 Voice KR-02)</option>
+<option>깊이 있고 온화한 서사형 내레이션 (중후한 남성 Voice KR-05)</option>
+<option>생동감 넘치는 문화재 탐험가 (밝은 중성 Voice KR-09)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-2.5 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant">다국어 실시간 생성 옵션</label>
+<div class="flex items-center gap-space-sm h-full pt-1">
+<label class="flex items-center gap-1.5 cursor-pointer font-body-md text-body-md text-on-surface">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span>English</span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer font-body-md text-body-md text-on-surface">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span>日本語</span>
+</label>
+<label class="flex items-center gap-1.5 cursor-pointer font-body-md text-body-md text-on-surface">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span>中文 (简体)</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">podcasts</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">전시실 BLE 비콘 근접 연동</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold bg-secondary-container px-space-xs rounded">신호 반경 1.5m 설정</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">관람객이 해당 유물 쇼케이스 앞에 머무를 시 자동으로 오디오 해설 시작 푸시 발송</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-on-primary peer-checked:bg-primary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary after:border-surface-dim after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">preview</span>
+              전시용 QR 플레이트 실시간 미리보기
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">규격: 아크릴 스탠드 A5</span>
+</div>
+<div class="relative w-full rounded-2xl p-space-lg bg-gradient-to-b from-[#162232] to-[#0A1118] text-white shadow-xl flex flex-col items-center justify-between min-h-[500px]">
+<div class="w-full flex items-center justify-between pb-space-md border-b border-[#2A3749]">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-md bg-tertiary-fixed text-primary-container flex items-center justify-center font-bold text-[12px]">S</div>
+<span class="font-headline-sm text-[16px] text-tertiary-fixed tracking-wider">StoryTour AI</span>
+</div>
+<span class="font-label-sm text-[10px] text-[#A2B1C6] tracking-widest uppercase">National Museum of Korea</span>
+</div>
+<div class="w-full flex flex-col items-center text-center my-space-md">
+<span class="font-label-sm text-[11px] text-tertiary-fixed tracking-widest uppercase mb-1">Permanent Exhibition Hall</span>
+<h3 class="font-headline-lg text-[22px] font-bold text-white tracking-tight" id="previewTitle">국보 백자 청화매죽문 항아리</h3>
+<span class="font-body-md text-[13px] text-[#BBC7DB] mt-1">Blue and White Porcelain Jar with Plum and Bamboo</span>
+</div>
+<div class="relative p-space-md rounded-2xl bg-white shadow-lg flex flex-col items-center justify-center">
+<div class="w-44 h-44 bg-surface-container-lowest rounded-xl flex items-center justify-center relative overflow-hidden">
+<svg class="w-full h-full text-primary-container" viewbox="0 0 100 100">
+<path d="M5 5 h30 v30 h-30 z M10 10 h20 v20 h-20 z M15 15 h10 v10 h-10 z" fill="currentColor"></path>
+<path d="M65 5 h30 v30 h-30 z M70 10 h20 v20 h-20 z M75 15 h10 v10 h-10 z" fill="currentColor"></path>
+<path d="M5 65 h30 v30 h-30 z M10 70 h20 v20 h-20 z M15 75 h10 v10 h-10 z" fill="currentColor"></path>
+<rect fill="currentColor" height="6" width="16" x="42" y="10"></rect>
+<rect fill="currentColor" height="12" width="6" x="42" y="22"></rect>
+<rect fill="currentColor" height="6" width="6" x="52" y="22"></rect>
+<rect fill="currentColor" height="16" width="6" x="10" y="42"></rect>
+<rect fill="currentColor" height="6" width="12" x="22" y="42"></rect>
+<rect fill="currentColor" height="6" width="6" x="22" y="52"></rect>
+<rect fill="#cca730" height="16" width="16" x="42" y="42"></rect>
+<circle cx="50" cy="50" fill="#101c2a" r="4"></circle>
+<rect fill="currentColor" height="6" width="8" x="65" y="42"></rect>
+<rect fill="currentColor" height="6" width="16" x="78" y="42"></rect>
+<rect fill="currentColor" height="6" width="14" x="70" y="54"></rect>
+<rect fill="currentColor" height="8" width="8" x="42" y="65"></rect>
+<rect fill="currentColor" height="14" width="6" x="54" y="65"></rect>
+<rect fill="currentColor" height="6" width="16" x="42" y="78"></rect>
+<rect fill="currentColor" height="8" width="8" x="68" y="68"></rect>
+<rect fill="currentColor" height="6" width="14" x="80" y="68"></rect>
+<rect fill="currentColor" height="14" width="18" x="76" y="80"></rect>
+</svg>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-[10px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[12px] text-tertiary">cell_tower</span>
+<span id="previewUid">NMK-CERAMIC-2025-09</span>
+</div>
+</div>
+<div class="w-full flex flex-col items-center text-center mt-space-md pt-space-sm border-t border-[#2A3749]">
+<div class="flex items-center gap-space-xs text-tertiary-fixed font-title-md text-[14px] font-semibold">
+<span class="material-symbols-outlined text-[18px]">headphones</span>
+<span>스마트폰 카메라로 스캔하여 AI 오디오 해설 청취</span>
+</div>
+<span class="font-label-sm text-[11px] text-[#8C9BAE] mt-0.5">Scan to experience high-fidelity AI audio docent tour</span>
+<div class="flex items-center gap-space-md mt-space-sm text-[11px] text-[#A2B1C6]">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>한국어</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>English</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>日本語</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>中文</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-secondary-container flex items-center justify-between text-on-secondary-container">
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>인쇄 해상도: 300 DPI 벡터 인쇄용 CMYK 프로파일 적용</span>
+</div>
+<button class="font-label-sm text-label-sm text-tertiary underline font-bold">샘플 시안 보기</button>
+</div>
+</div>
+</div>
+<div class="px-space-xl py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>발급 즉시 박물관 키오스크 및 StoryTour 앱 모바일 데이터베이스에 실시간 동기화됩니다.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors" type="button">
+            임시 저장
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface font-title-md text-title-md hover:bg-surface-container-high transition-colors" type="button">
+            취소
+          </button>
+<button class="flex items-center gap-space-xs px-space-xl py-2.5 rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-md hover:opacity-95 transition-all" id="issueBtn" type="button">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">print</span>
+<span>QR 코드 즉시 발급 &amp; PDF 인쇄 팩 다운로드</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    const nameInput = document.getElementById('artifactNameInput');
+    const previewTitle = document.getElementById('previewTitle');
+    const uidInput = document.getElementById('uidInput');
+    const previewUid = document.getElementById('previewUid');
+    const issueBtn = document.getElementById('issueBtn');
+
+    if (nameInput && previewTitle) {
+      nameInput.addEventListener('input', (e) => {
+        previewTitle.textContent = e.target.value.trim() || '유물 명칭 미입력';
+      });
+    }
+
+    if (uidInput && previewUid) {
+      uidInput.addEventListener('input', (e) => {
+        previewUid.textContent = e.target.value.trim() || 'UID-UNKNOWN';
+      });
+    }
+
+    if (issueBtn) {
+      issueBtn.addEventListener('click', () => {
+        const originalText = issueBtn.innerHTML;
+        issueBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>QR 플레이트 벡터 패키징 생성 중...</span>';
+        issueBtn.setAttribute('disabled', 'true');
+        setTimeout(() => {
+          issueBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>발급 및 다운로드 완료 (NMK_A5_PACK.zip)</span>';
+          setTimeout(() => {
+            issueBtn.innerHTML = originalText;
+            issueBtn.removeAttribute('disabled');
+          }, 2400);
+        }, 1200);
+      });
+    }
+  </script>
+</div></main></div></body></html>
